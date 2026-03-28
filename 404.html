@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - 记忆丢失</title>
+    <style>
+        /* 全局重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0a0a0a; /* 深邃的黑 */
+            color: #e0e0e0; /* 柔和的灰白 */
+            font-family: "Courier New", Courier, monospace; /* 等宽字体，模拟终端或档案 */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* 背景噪点纹理，增加胶片/旧屏幕质感 */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .container {
+            text-align: center;
+            z-index: 2;
+            padding: 2rem;
+            max-width: 600px;
+        }
+
+        /* 404 数字样式 */
+        h1 {
+            font-size: 8rem;
+            font-weight: 100;
+            letter-spacing: -5px;
+            opacity: 0.1; /* 非常淡，仿佛正在消失 */
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+        /* 核心文案样式 */
+        p.message {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            font-weight: 300;
+            color: #a0a0a0;
+            margin-bottom: 3rem;
+            /* 呼吸动画 */
+            animation: breathe 4s infinite ease-in-out;
+        }
+
+        /* 返回按钮样式 */
+        .back-btn {
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            border: 1px solid #333;
+            padding: 10px 24px;
+            font-size: 0.9rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            opacity: 0.7;
+        }
+
+        .back-btn:hover {
+            background-color: #fff;
+            color: #000;
+            opacity: 1;
+            border-color: #fff;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        }
+
+        /* 动画定义 */
+        @keyframes breathe {
+            0%, 100% {
+                opacity: 0.4;
+                filter: blur(0px);
+            }
+            50% {
+                opacity: 0.8;
+                filter: blur(0.5px); /* 轻微模糊，模拟信号不稳定 */
+            }
+        }
+
+        /* 移动端适配 */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 5rem;
+            }
+            p.message {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>404</h1>
+        
+        <p class="message">
+            抱歉，这段记忆似乎被删除了，<br>
+            或者它从未存在过。
+        </p>
+
+        <a href="/" class="back-btn">返回现实</a>
+    </div>
+
+</body>
+</html>

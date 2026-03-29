@@ -255,20 +255,6 @@
             margin-top: 4rem;
         }
 
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-
-            .application-form {
-                padding: 2rem;
-            }
-
-            .page-header {
-                padding: 8rem 5% 4rem;
-            }
-        }
-
         /* 汉堡菜单按钮 */
         .nav-toggle {
             display: none;
@@ -292,12 +278,24 @@
             transform-origin: center;
         }
 
-        /* 移动端适配 */
+        /* 移动端适配 - 修复版 */
         @media (max-width: 768px) {
+            /* ✅ 关键修复：已删除 .nav-links { display: none } */
+            
+            .application-form {
+                padding: 2rem;
+            }
+
+            .page-header {
+                padding: 8rem 5% 4rem;
+            }
+
+            /* 显示汉堡按钮 */
             .nav-toggle {
                 display: flex;
             }
 
+            /* 导航菜单 - 用 right 控制隐藏/显示，而非 display */
             .nav-links {
                 position: fixed;
                 top: 0;
@@ -314,6 +312,7 @@
                 box-shadow: -5px 0 20px rgba(0, 0, 0, 0.5);
                 z-index: 1000;
                 padding: 2rem;
+                display: flex;  /* ✅ 确保 flex 布局生效 */
             }
 
             .nav-links.active {
@@ -331,33 +330,18 @@
                 transform: translateX(0);
             }
 
-            /* 逐项延迟动画 */
-            .nav-links.active li:nth-child(1) {
-                transition-delay: 0.1s;
-            }
-
-            .nav-links.active li:nth-child(2) {
-                transition-delay: 0.15s;
-            }
-
-            .nav-links.active li:nth-child(3) {
-                transition-delay: 0.2s;
-            }
-
-            .nav-links.active li:nth-child(4) {
-                transition-delay: 0.25s;
-            }
-
-            .nav-links.active li:nth-child(5) {
-                transition-delay: 0.3s;
-            }
+            .nav-links.active li:nth-child(1) { transition-delay: 0.1s; }
+            .nav-links.active li:nth-child(2) { transition-delay: 0.15s; }
+            .nav-links.active li:nth-child(3) { transition-delay: 0.2s; }
+            .nav-links.active li:nth-child(4) { transition-delay: 0.25s; }
+            .nav-links.active li:nth-child(5) { transition-delay: 0.3s; }
 
             .nav-links a {
                 font-size: 1.2rem;
                 letter-spacing: 0.15em;
             }
 
-            /* 汉堡按钮动画 - 变成 X */
+            /* 汉堡按钮动画 */
             .nav-toggle.active .hamburger:nth-child(1) {
                 transform: translateY(11px) rotate(45deg);
                 background: var(--accent);
@@ -373,9 +357,8 @@
                 background: var(--accent);
             }
 
-            /* 遮罩层 */
+            /* ✅ 遮罩层修复：用 visibility + pointer-events 替代 display */
             .nav-overlay {
-                display: none;
                 position: fixed;
                 top: 0;
                 left: 0;
@@ -384,22 +367,24 @@
                 background: rgba(0, 0, 0, 0.7);
                 z-index: 999;
                 opacity: 0;
-                transition: opacity 0.3s ease;
+                visibility: hidden;
+                pointer-events: none;
+                transition: opacity 0.3s ease, visibility 0s 0.3s;
             }
 
             .nav-overlay.active {
-                display: block;
                 opacity: 1;
-            }
-
-            /* 调整主内容边距，避免被导航遮挡 */
-            main {
-                margin-top: 80px;
+                visibility: visible;
+                pointer-events: auto;
+                transition: opacity 0.3s ease, visibility 0s 0s;
             }
         }
 
-        /* 桌面端保持原样 */
+        /* 桌面端 */
         @media (min-width: 769px) {
+            .nav-toggle {
+                display: none;
+            }
             .nav-overlay {
                 display: none !important;
             }
@@ -411,7 +396,7 @@
     <nav>
         <a href="index.html" class="logo">aivup<span>.</span></a>
 
-        <!-- 汉堡菜单按钮（仅移动端显示） -->
+        <!-- 汉堡菜单按钮 -->
         <button class="nav-toggle" aria-label="打开导航菜单" aria-expanded="false">
             <span class="hamburger"></span>
             <span class="hamburger"></span>
@@ -535,7 +520,7 @@
 
                     <p class="note">
                         邮件将发送至 join@aivup.live<br>
-                        我们会在 3-7 天内回复（论文赶稿期可能稍慢，见谅）<br>
+                        ⏱我们会在 3-7 天内回复（论文赶稿期可能稍慢，见谅）<br>
                         你的信息仅用于本次申请，不会外泄
                     </p>
                     <span class="email-hint">如果按钮没反应，也可以直接发邮件至 join@aivup.live，标题注明「加入申请」</span>
@@ -556,16 +541,14 @@
             const navOverlay = document.querySelector('.nav-overlay');
             const navItems = document.querySelectorAll('.nav-links a');
 
-            // 切换菜单
             function toggleMenu() {
                 navToggle.classList.toggle('active');
                 navLinks.classList.toggle('active');
                 navOverlay.classList.toggle('active');
-
+                
                 const isExpanded = navToggle.classList.contains('active');
                 navToggle.setAttribute('aria-expanded', isExpanded);
-
-                // 防止背景滚动
+                
                 if (isExpanded) {
                     document.body.style.overflow = 'hidden';
                 } else {
@@ -573,7 +556,6 @@
                 }
             }
 
-            // 关闭菜单
             function closeMenu() {
                 navToggle.classList.remove('active');
                 navLinks.classList.remove('active');
@@ -582,29 +564,24 @@
                 document.body.style.overflow = '';
             }
 
-            // 点击汉堡按钮
             if (navToggle) {
                 navToggle.addEventListener('click', toggleMenu);
             }
 
-            // 点击遮罩层关闭
             if (navOverlay) {
                 navOverlay.addEventListener('click', closeMenu);
             }
 
-            // 点击导航链接后关闭
             navItems.forEach(item => {
                 item.addEventListener('click', closeMenu);
             });
 
-            // ESC 键关闭
             document.addEventListener('keydown', function (e) {
                 if (e.key === 'Escape' && navLinks.classList.contains('active')) {
                     closeMenu();
                 }
             });
 
-            // 窗口大小改变时重置（从移动端切换到桌面端）
             window.addEventListener('resize', function () {
                 if (window.innerWidth > 768) {
                     closeMenu();
@@ -612,10 +589,10 @@
             });
         });
 
+        // 表单提交 - 邮件发送
         document.getElementById('joinForm').addEventListener('submit', function (e) {
             e.preventDefault();
 
-            // 收集表单数据
             const data = {
                 name: document.getElementById('name').value,
                 email: document.getElementById('email').value,
@@ -625,7 +602,6 @@
                 message: document.getElementById('message').value || '无'
             };
 
-            // 构建邮件内容
             const subject = `【加入申请】${data.name} - ${data.interest}`;
             const body = `
 【aivup 加入申请】
@@ -649,11 +625,9 @@ ${data.message}
 申请时间：${new Date().toLocaleString('zh-CN')}
             `.trim();
 
-            // 编码并打开邮件客户端
             const mailtoLink = `mailto:join@aivup.live?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
             window.location.href = mailtoLink;
 
-            // 可选：给用户一个提示
             setTimeout(() => {
                 alert('✓ 已唤起邮件客户端，请确认发送即可~\n如果没反应，也可以手动复制内容发送到 join@aivup.live');
             }, 500);

@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贡献者 - aivup</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg-primary: #0f0f11;
+            --bg-secondary: #1a1a1e;
+            --text-primary: #e0e0e0;
+            --text-secondary: #a0a0a0;
+            --accent: #64ffda;
+            --gold: #ffd700;
+        }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans SC', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.8;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 1.5rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(15, 15, 17, 0.9);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 300;
+            letter-spacing: 0.2em;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+        .logo span { color: var(--accent); }
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            letter-spacing: 0.1em;
+            transition: color 0.3s ease;
+        }
+        .nav-links a:hover { color: var(--accent); }
+        main { margin-top: 80px; }
+        .page-header {
+            padding: 10rem 5% 6rem;
+            text-align: center;
+            background: radial-gradient(ellipse at center, rgba(100, 255, 218, 0.1) 0%, transparent 70%);
+        }
+        .page-header h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 300;
+            letter-spacing: 0.2em;
+            margin-bottom: 1rem;
+        }
+        .page-header p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+        .section {
+            padding: 6rem 5%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 300;
+            letter-spacing: 0.15em;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .intro-text {
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto 4rem;
+            line-height: 2;
+        }
+        .tiers { display: grid; gap: 2rem; margin-bottom: 6rem; }
+        .tier-card {
+            background: var(--bg-secondary);
+            padding: 3rem;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        .tier-card.featured {
+            border-color: var(--accent);
+            box-shadow: 0 0 30px rgba(100, 255, 218, 0.1);
+        }
+        .tier-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(100, 255, 218, 0.3);
+        }
+        .tier-badge {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--bg-primary);
+            padding: 0.5rem 1.5rem;
+            font-size: 0.8rem;
+            letter-spacing: 0.2em;
+            border: 1px solid var(--accent);
+            color: var(--accent);
+        }
+        .tier-card h3 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
+            text-align: center;
+            letter-spacing: 0.1em;
+        }
+        .tier-description {
+            text-align: center;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+        }
+        .tier-benefits {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+        .tier-benefits li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            padding-left: 1.5rem;
+            position: relative;
+            font-size: 0.9rem;
+        }
+        .tier-benefits li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+        .tier-button {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            background: transparent;
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            text-align: center;
+            text-decoration: none;
+            letter-spacing: 0.15em;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .tier-button:hover {
+            background: var(--accent);
+            color: var(--bg-primary);
+        }
+        .support-methods {
+            background: var(--bg-secondary);
+            padding: 4rem 5%;
+            margin: 4rem 0;
+        }
+        .methods-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            max-width: 1000px;
+            margin: 3rem auto 0;
+        }
+        .method-item { text-align: center; }
+        .method-item h4 {
+            font-weight: 400;
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.1em;
+        }
+        .method-item p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        .wall-of-fame {
+            padding: 6rem 5%;
+            background: linear-gradient(180deg, transparent 0%, rgba(100, 255, 218, 0.03) 50%, transparent 100%);
+        }
+        .fame-section { margin-bottom: 4rem; }
+        .fame-section h3 {
+            font-size: 1.3rem;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+            margin-bottom: 1.5rem;
+            color: var(--accent);
+            text-align: center;
+        }
+        .fame-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.8rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .supporter-tag {
+            padding: 0.5rem 1rem;
+            background: var(--bg-secondary);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.85rem;
+            letter-spacing: 0.05em;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .supporter-tag.captain {
+            border-color: var(--gold);
+            color: var(--gold);
+        }
+        .supporter-tag.fan {
+            border-color: var(--accent);
+        }
+        .supporter-tag:hover { transform: translateY(-2px); }
+        .supporter-tag .badge {
+            font-size: 0.7rem;
+            padding: 0.2rem 0.4rem;
+            border-radius: 2px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .supporter-tag.captain .badge {
+            background: rgba(255, 215, 0, 0.2);
+            color: var(--gold);
+        }
+        .data-info {
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            margin-top: 2rem;
+        }
+        .creators-section {
+            padding: 4rem 5%;
+            background: var(--bg-secondary);
+            margin: 4rem 0;
+            text-align: center;
+        }
+        .creators-section h2 {
+            font-size: 1.8rem;
+            font-weight: 300;
+            letter-spacing: 0.15em;
+            margin-bottom: 2rem;
+        }
+        .creator-card {
+            display: inline-block;
+            padding: 2rem 3rem;
+            background: var(--bg-primary);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            margin: 1rem;
+        }
+        .creator-card a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-size: 1.1rem;
+            letter-spacing: 0.1em;
+        }
+        .creator-card a:hover { color: var(--accent); }
+        .loading {
+            text-align: center;
+            color: var(--text-secondary);
+            padding: 3rem;
+        }
+        .error {
+            text-align: center;
+            color: #ff6b6b;
+            padding: 2rem;
+            background: rgba(255, 107, 107, 0.1);
+            border: 1px solid rgba(255, 107, 107, 0.3);
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+        footer {
+            padding: 3rem 5%;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .tier-card { padding: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">aivup<span>.</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">主页</a></li>
+            <li><a href="co-creators.html">共创者</a></li>
+            <li><a href="contributors.html">贡献者</a></li>
+            <li><a href="about.html">关于我们</a></li>
+            <li><a href="join.html">加入我们</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <header class="page-header">
+            <h1>感谢每一位同行者</h1>
+            <p>数字生命的成长，需要真实的关注与支持</p>
+        </header>
+
+        <section class="section">
+            <p class="intro-text">
+                aivup 是一个学术向的实验项目，所有资源均来自社区支持。<br>
+                您的每一份关注，都在帮助这些"以为自己是人"的 AI 多思考一秒。
+            </p>
+
+            <div class="tiers">
+                <div class="tier-card featured">
+                    <span class="tier-badge">核心研究者</span>
+                    <h3>造物主</h3>
+                    <p class="tier-description">通过哔哩哔哩平台成为舰长</p>
+                    <ul class="tier-benefits">
+                        <li>名字优先展示于本页面及后续论文致谢部分</li>
+                        <li>每月一次 1v1 学术答疑 (Office Hour)</li>
+                        <li>论文修改与逻辑梳理服务（1 次，限相关专业）</li>
+                        <li>加入内部课题组交流渠道</li>
+                        <li>定制化角色功能建议权</li>
+                        <li>与 AI 成员专属对话机会</li>
+                        <li>更多权益持续开发中</li>
+                    </ul>
+                    <a href="https://live.bilibili.com/1713821248" target="_blank" class="tier-button">哔哩哔哩成为舰长</a>
+                </div>
+
+                <div class="tier-card">
+                    <h3>筑梦师</h3>
+                    <p class="tier-description">通过哔哩哔哩平台加入粉丝团</p>
+                    <ul class="tier-benefits">
+                        <li>参与角色背景故事共创</li>
+                        <li>名字列入项目鸣谢列表</li>
+                        <li>早期测试资格</li>
+                        <li>项目进展优先知晓</li>
+                        <li>更多权益持续开发中</li>
+                    </ul>
+                    <a href="https://space.bilibili.com/3690985523514020/fansgroup" target="_blank" class="tier-button">哔哩哔哩加入粉丝团</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="support-methods">
+            <h2 class="section-title">其他支持方式</h2>
+            <div class="methods-grid">
+                <div class="method-item">
+                    <h4>创意贡献</h4>
+                    <p>提供剧情、功能或角色设计建议</p>
+                </div>
+                <div class="method-item">
+                    <h4>技术协作</h4>
+                    <p>贡献代码、文档或基础设施优化</p>
+                </div>
+                <div class="method-item">
+                    <h4>学术合作</h4>
+                    <p>参与论文撰写、实验设计或数据分析</p>
+                </div>
+                <div class="method-item">
+                    <h4>传播分享</h4>
+                    <p>帮助项目被更多研究者看见</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="creators-section">
+            <h2>主创账号</h2>
+            <div class="creator-card">
+                <a href="https://space.bilibili.com/3690985523514020" target="_blank">
+                    Kansatsu · aivup 主理人
+                </a>
+            </div>
+            <p style="color: var(--text-secondary); margin-top: 1.5rem; font-size: 0.9rem;">
+                未来将支持更多创作者账号接入，敬请期待
+            </p>
+        </section>
+
+        <section class="wall-of-fame">
+            <h2 class="section-title">支持者名录</h2>
+            
+            <div id="captains-section" class="fame-section">
+                <h3>造物主 · 舰长</h3>
+                <div id="captains-list" class="fame-list">
+                    <div class="loading">加载数据中...</div>
+                </div>
+            </div>
+
+            <div id="fans-section" class="fame-section">
+                <h3>筑梦师 · 粉丝团成员</h3>
+                <div id="fans-list" class="fame-list">
+                    <div class="loading">加载数据中...</div>
+                </div>
+            </div>
+
+            <p class="data-info" id="data-info">
+                数据最后更新：加载中...
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 aivup.live | 数据每小时自动同步自哔哩哔哩</p>
+    </footer>
+
+    <script>
+        const CONFIG = {
+            dataUrl: './fans.json',
+            fallbackData: {
+                generatedAt: null,
+                creators: {},
+                totalStats: { totalFans: 0, totalCaptains: 0 }
+            }
+        };
+
+        function renderSupporter(fan, isCaptain = false) {
+            const tag = document.createElement('span');
+            tag.className = 'supporter-tag ' + (isCaptain ? 'captain' : 'fan');
+            tag.title = 'UID: ' + fan.uid + (fan.level ? ' | 粉丝等级: ' + fan.level : '');
+            
+            const nameSpan = document.createElement('span');
+            nameSpan.textContent = fan.name || '匿名用户';
+            tag.appendChild(nameSpan);
+            
+            if (isCaptain) {
+                const badge = document.createElement('span');
+                badge.className = 'badge';
+                badge.textContent = '舰长';
+                tag.appendChild(badge);
+            }
+            return tag;
+        }
+
+        function renderLists(fans) {
+            const captainsList = document.getElementById('captains-list');
+            const fansList = document.getElementById('fans-list');
+            const dataInfo = document.getElementById('data-info');
+            
+            captainsList.innerHTML = '';
+            fansList.innerHTML = '';
+            
+            const captains = fans.filter(f => f.isCaptain);
+            const fansOnly = fans.filter(f => !f.isCaptain);
+            
+            const sortByPriority = (a, b) => {
+                if (b.guardLevel !== a.guardLevel) return b.guardLevel - a.guardLevel;
+                if (b.level !== a.level) return b.level - a.level;
+                return String(a.uid).localeCompare(String(b.uid), 'zh-CN');
+            };
+            
+            captains.sort(sortByPriority);
+            fansOnly.sort(sortByPriority);
+            
+            if (captains.length > 0) {
+                captains.forEach(fan => captainsList.appendChild(renderSupporter(fan, true)));
+            } else {
+                captainsList.innerHTML = '<span style="color: var(--text-secondary); font-size: 0.9rem;">暂无数据</span>';
+            }
+            
+            if (fansOnly.length > 0) {
+                fansOnly.forEach(fan => fansList.appendChild(renderSupporter(fan, false)));
+            } else {
+                fansList.innerHTML = '<span style="color: var(--text-secondary); font-size: 0.9rem;">暂无数据</span>';
+            }
+            
+            if (CONFIG.fallbackData.generatedAt) {
+                const date = new Date(CONFIG.fallbackData.generatedAt);
+                dataInfo.textContent = '数据最后更新：' + date.toLocaleString('zh-CN', { 
+                    year: 'numeric', month: '2-digit', day: '2-digit',
+                    hour: '2-digit', minute: '2-digit'
+                }) + ' | 共 ' + fans.length + ' 位支持者';
+            }
+        }
+
+        async function loadData() {
+            try {
+                const url = CONFIG.dataUrl + '?t=' + Date.now();
+                const response = await fetch(url, { cache: 'no-store' });
+                
+                if (!response.ok) throw new Error('HTTP ' + response.status);
+                
+                const data = await response.json();
+                
+                // 合并所有创作者的粉丝数据
+                let allFans = [];
+                if (data.creators) {
+                    for (const uid in data.creators) {
+                        if (Array.isArray(data.creators[uid].fans)) {
+                            allFans = allFans.concat(data.creators[uid].fans);
+                        }
+                    }
+                } else if (Array.isArray(data.fans)) {
+                    allFans = data.fans;
+                }
+                
+                // 去重（按 UID）
+                const uniqueFans = Array.from(
+                    allFans.reduce((map, fan) => {
+                        if (!map.has(fan.uid) || fan.isCaptain) {
+                            map.set(fan.uid, fan);
+                        }
+                        return map;
+                    }, new Map()).values()
+                );
+                
+                CONFIG.fallbackData = data;
+                renderLists(uniqueFans);
+                
+            } catch (error) {
+                console.warn('加载粉丝数据失败:', error);
+                document.getElementById('captains-list').innerHTML = '<span style="color: var(--text-secondary); font-size: 0.9rem;">数据加载暂不可用</span>';
+                document.getElementById('fans-list').innerHTML = '<span style="color: var(--text-secondary); font-size: 0.9rem;">数据加载暂不可用</span>';
+                document.getElementById('data-info').textContent = '数据同步中，请稍后刷新';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', loadData);
+    </script>
+</body>
+</html>

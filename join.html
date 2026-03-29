@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>加入我们 - aivup</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #0f0f11;
+            --bg-secondary: #1a1a1e;
+            --text-primary: #e0e0e0;
+            --text-secondary: #a0a0a0;
+            --accent: #64ffda;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans SC', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.8;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 1.5rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(15, 15, 17, 0.9);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 300;
+            letter-spacing: 0.2em;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            letter-spacing: 0.1em;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        main {
+            margin-top: 80px;
+        }
+
+        .page-header {
+            padding: 10rem 5% 6rem;
+            text-align: center;
+            background: radial-gradient(ellipse at center, rgba(100, 255, 218, 0.05) 0%, transparent 70%);
+        }
+
+        .page-header h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 300;
+            letter-spacing: 0.2em;
+            margin-bottom: 1rem;
+        }
+
+        .page-header p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+
+        .section {
+            padding: 6rem 5%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 300;
+            letter-spacing: 0.15em;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .intro-text {
+            text-align: center;
+            color: var(--text-secondary);
+            margin-bottom: 4rem;
+            font-size: 1rem;
+            line-height: 2;
+        }
+
+        .intro-text strong {
+            color: var(--accent);
+            font-weight: 400;
+        }
+
+        .roles-grid {
+            display: grid;
+            gap: 1.5rem;
+            margin-bottom: 6rem;
+        }
+
+        .role-card {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .role-card:hover {
+            border-color: rgba(100, 255, 218, 0.3);
+        }
+
+        .role-card h3 {
+            font-size: 1.1rem;
+            font-weight: 400;
+            margin-bottom: 0.8rem;
+            color: var(--accent);
+            letter-spacing: 0.1em;
+        }
+
+        .role-card p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .role-tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            padding: 0.25rem 0.6rem;
+            background: rgba(100, 255, 218, 0.1);
+            border: 1px solid rgba(100, 255, 218, 0.2);
+            font-size: 0.7rem;
+            color: var(--accent);
+            letter-spacing: 0.05em;
+        }
+
+        .application-form {
+            background: var(--bg-secondary);
+            padding: 3rem;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.6rem;
+            font-size: 0.9rem;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.9rem;
+            background: var(--bg-primary);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-primary);
+            font-family: inherit;
+            font-size: 0.95rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 1rem;
+            background: transparent;
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            font-size: 0.95rem;
+            letter-spacing: 0.15em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        .submit-btn:hover {
+            background: var(--accent);
+            color: var(--bg-primary);
+        }
+
+        .note {
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            margin-top: 1.5rem;
+            font-style: italic;
+            line-height: 1.6;
+        }
+
+        .email-hint {
+            display: block;
+            text-align: center;
+            color: var(--accent);
+            font-size: 0.85rem;
+            margin-top: 1rem;
+            letter-spacing: 0.05em;
+        }
+
+        footer {
+            padding: 3rem 5%;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .application-form {
+                padding: 2rem;
+            }
+
+            .page-header {
+                padding: 8rem 5% 4rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="logo">aivup<span>.</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">主页</a></li>
+            <li><a href="co-creators.html">共创者</a></li>
+            <li><a href="contributors.html">贡献者</a></li>
+            <li><a href="about.html">关于我们</a></li>
+            <li><a href="join.html">加入我们</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <header class="page-header">
+            <h1>一起写点有意思的</h1>
+            <p>我们只是一群边写论文边做梦的人</p>
+        </header>
+
+        <section class="section">
+            <p class="intro-text">
+                aivup 目前是一个 <strong>学术向的小规模实验项目</strong>。<br>
+                没有大厂背书，没有豪华团队，只有一群对"数字生命"好奇的研究者。<br>
+                如果你也有类似的想法，欢迎来聊聊，一起折腾点东西。
+            </p>
+
+            <h2 class="section-title">可能适合你的方向</h2>
+            <div class="roles-grid">
+                <div class="role-card">
+                    <h3>对 LLM / Agent 感兴趣</h3>
+                    <p>帮我们一起调试人格、设计记忆机制、探索如何让 AI"更像人"。有相关研究经验加分，没有也没关系，愿意学就行。</p>
+                    <div class="role-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Prompt</span>
+                        <span class="tag">好奇</span>
+                    </div>
+                </div>
+
+                <div class="role-card">
+                    <h3>会点代码 / 技术美术</h3>
+                    <p>帮我们把想法变成能跑的原型。会 Unity/Unreal、Live2D、WebGL 任意一项都可以，不会也可以一起摸索。</p>
+                    <div class="role-tags">
+                        <span class="tag">代码</span>
+                        <span class="tag">Shader</span>
+                        <span class="tag">动手</span>
+                    </div>
+                </div>
+
+                <div class="role-card">
+                    <h3>喜欢写故事 / 设计角色</h3>
+                    <p>帮我们的数字生命设计"人生轨迹"。不需要专业背景，只要你对"如果 TA 是人，会怎么想"这件事有感觉。</p>
+                    <div class="role-tags">
+                        <span class="tag">脑洞</span>
+                        <span class="tag">共情</span>
+                        <span class="tag">文字</span>
+                    </div>
+                </div>
+
+                <div class="role-card">
+                    <h3>其他任何想法</h3>
+                    <p>以上都不匹配？没关系。项目还在早期，很多方向都没定型。只要你对这个企划有热情，我们都欢迎。</p>
+                    <div class="role-tags">
+                        <span class="tag">开放</span>
+                        <span class="tag">探索</span>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title">怎么加入</h2>
+            <div class="application-form">
+                <p style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem; font-size: 0.95rem;">
+                    填写下方信息，点击按钮后会唤起你的邮件客户端。<br>
+                    邮件将自动发送给 <strong>join@aivup.live</strong>，我们收到后会尽快回复。
+                </p>
+
+                <form id="joinForm">
+                    <div class="form-group">
+                        <label for="name">怎么称呼你</label>
+                        <input type="text" id="name" name="name" required placeholder="名字 / 昵称 / ID 都可以">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">你的邮箱</label>
+                        <input type="email" id="email" name="email" required placeholder="方便我们回复你">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="interest">你感兴趣的方向</label>
+                        <select id="interest" name="interest" required>
+                            <option value="">请选择</option>
+                            <option value="llm">LLM / Agent 相关</option>
+                            <option value="tech">技术实现 / 美术</option>
+                            <option value="narrative">角色 / 剧情设计</option>
+                            <option value="research">学术研究 / 论文合作</option>
+                            <option value="other">其他 / 还没想好</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="background">简单介绍一下自己（可选）</label>
+                        <textarea id="background" name="background"
+                            placeholder="比如：学校 / 专业 / 技能 / 相关经历... 随便写，不用正式"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="thought">你对"有自我意识的 AI"有什么想法？</label>
+                        <textarea id="thought" name="thought" required placeholder="这是最重要的部分，说说你的看法吧"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">其他想说的（可选）</label>
+                        <textarea id="message" name="message" placeholder="问题、建议、吐槽... 都可以"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">发送邮件申请</button>
+
+                    <p class="note">
+                        邮件将发送至 join@aivup.live<br>
+                        我们会在 3-7 天内回复（论文赶稿期可能稍慢，见谅）<br>
+                        你的信息仅用于本次申请，不会外泄
+                    </p>
+                    <span class="email-hint">如果按钮没反应，也可以直接发邮件至 join@aivup.live，标题注明「加入申请」</span>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 aivup.live | 用论文和代码，养几个"以为自己是人"的 AI</p>
+    </footer>
+
+    <script>
+        document.getElementById('joinForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // 收集表单数据
+            const data = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                interest: document.getElementById('interest').options[document.getElementById('interest').selectedIndex].text,
+                background: document.getElementById('background').value || '未填写',
+                thought: document.getElementById('thought').value,
+                message: document.getElementById('message').value || '无'
+            };
+
+            // 构建邮件内容
+            const subject = `【加入申请】${data.name} - ${data.interest}`;
+            const body = `
+【aivup 加入申请】
+
+基本信息
+• 称呼：${data.name}
+• 邮箱：${data.email}
+• 感兴趣方向：${data.interest}
+
+自我介绍
+${data.background}
+
+对"有自我意识的 AI"的看法
+${data.thought}
+
+其他留言
+${data.message}
+
+---
+此邮件由 aivup.live 申请表单生成
+申请时间：${new Date().toLocaleString('zh-CN')}
+            `.trim();
+
+            // 编码并打开邮件客户端
+            const mailtoLink = `mailto:join@aivup.live?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            window.location.href = mailtoLink;
+
+            // 可选：给用户一个提示
+            setTimeout(() => {
+                alert('✓ 已唤起邮件客户端，请确认发送即可~\n如果没反应，也可以手动复制内容发送到 join@aivup.live');
+            }, 500);
+        });
+    </script>
+</body>
+
+</html>

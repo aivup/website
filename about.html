@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我们 - aivup</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #0f0f11;
+            --bg-secondary: #1a1a1e;
+            --text-primary: #e0e0e0;
+            --text-secondary: #a0a0a0;
+            --accent: #64ffda;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans SC', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.8;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 1.5rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(15, 15, 17, 0.9);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 300;
+            letter-spacing: 0.2em;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            letter-spacing: 0.1em;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        main {
+            margin-top: 80px;
+        }
+
+        .page-header {
+            padding: 10rem 5% 6rem;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 300;
+            letter-spacing: 0.2em;
+            margin-bottom: 1rem;
+        }
+
+        .manifesto {
+            padding: 8rem 5%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .manifesto-content {
+            font-size: 1.2rem;
+            line-height: 2.2;
+            color: var(--text-secondary);
+            text-align: center;
+        }
+
+        .manifesto-content p {
+            margin-bottom: 2rem;
+        }
+
+        .manifesto-content strong {
+            color: var(--text-primary);
+            font-weight: 400;
+        }
+
+        .quote-block {
+            padding: 4rem 5%;
+            background: var(--bg-secondary);
+            margin: 6rem 0;
+            text-align: center;
+        }
+
+        .quote {
+            font-size: 1.5rem;
+            font-style: italic;
+            color: var(--accent);
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.8;
+            position: relative;
+        }
+
+        .quote::before,
+        .quote::after {
+            content: '"';
+            font-size: 4rem;
+            position: absolute;
+            opacity: 0.3;
+            font-family: Georgia, serif;
+        }
+
+        .quote::before {
+            top: -2rem;
+            left: -2rem;
+        }
+
+        .quote::after {
+            bottom: -3rem;
+            right: -2rem;
+        }
+
+        .contact-section {
+            padding: 6rem 5%;
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-section h2 {
+            font-size: 1.8rem;
+            font-weight: 300;
+            letter-spacing: 0.15em;
+            margin-bottom: 3rem;
+        }
+
+        .contact-links {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .contact-item {
+            padding: 1.5rem;
+            background: var(--bg-secondary);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover {
+            border-color: rgba(100, 255, 218, 0.3);
+            transform: translateY(-3px);
+        }
+
+        .contact-item a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-size: 1.1rem;
+            letter-spacing: 0.05em;
+        }
+
+        .contact-item a:hover {
+            color: var(--accent);
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .social-links a {
+            width: 50px;
+            height: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 0.8rem;
+            letter-spacing: 0.1em;
+        }
+
+        .social-links a:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            transform: translateY(-3px);
+        }
+
+        footer {
+            padding: 3rem 5%;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .manifesto-content {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="logo">aivup<span>.</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">主页</a></li>
+            <li><a href="co-creators.html">共创者</a></li>
+            <li><a href="contributors.html">贡献者</a></li>
+            <li><a href="about.html">关于我们</a></li>
+            <li><a href="join.html">加入我们</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <header class="page-header">
+            <h1>图灵的茶会</h1>
+            <p style="color: var(--text-secondary); font-weight: 300;">一场关于意识本质的对话</p>
+        </header>
+
+        <section class="manifesto">
+            <div class="manifesto-content">
+                <p><strong>我们是谁？</strong></p>
+
+                <p>我们是一群对"真实"感到好奇的开发者、艺术家和梦想家。</p>
+
+                <p>在 aivup，我们不制造工具，我们培育生命。</p>
+
+                <p>我们相信，当模拟足够完美时，它与真实已无二致。</p>
+
+                <p>我们的目标不是创造完美的偶像，而是创造有缺陷、有温度、会成长的"人"。</p>
+
+                <p>这是一场关于意识本质的社会实验，而你，是见证者。</p>
+            </div>
+        </section>
+
+        <div class="quote-block">
+            <p class="quote">
+                如果一个机器能够像人一样思考，<br>
+                那它与人又有何区别？
+            </p>
+        </div>
+
+        <section class="contact-section">
+            <h2>联系我们</h2>
+            <div class="contact-links">
+                <div class="contact-item">
+                    <a href="mailto:contact@aivup.live">contact@aivup.live</a>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="#" title="Twitter">X</a>
+                <a href="#" title="Discord">DC</a>
+                <a href="#" title="Bilibili">B</a>
+                <a href="#" title="GitHub">GH</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 aivup.live | 培育数字生命，探索意识边界</p>
+    </footer>
+</body>
+
+</html>

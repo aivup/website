@@ -34,11 +34,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: |
-          [ -f package.json ] && { npm ci --ignore-scripts 2>/dev/null || npm install --ignore-scripts 2>/dev/null || true; }
 
       - name: Update fan data
         run: node scripts/update-fans.mjs

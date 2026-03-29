@@ -376,8 +376,6 @@
 
         /* 移动端适配 - 修复版 */
         @media (max-width: 768px) {
-            /* ✅ 关键修复：删除 .nav-links { display: none } */
-            
             .hero h1 {
                 font-size: 2rem;
             }
@@ -391,7 +389,7 @@
                 display: flex;
             }
 
-            /* 导航菜单 - 用 right 控制隐藏/显示，而非 display */
+            /* 导航菜单 - 用 right 控制隐藏/显示 */
             .nav-links {
                 position: fixed;
                 top: 0;
@@ -426,11 +424,25 @@
                 transform: translateX(0);
             }
 
-            .nav-links.active li:nth-child(1) { transition-delay: 0.1s; }
-            .nav-links.active li:nth-child(2) { transition-delay: 0.15s; }
-            .nav-links.active li:nth-child(3) { transition-delay: 0.2s; }
-            .nav-links.active li:nth-child(4) { transition-delay: 0.25s; }
-            .nav-links.active li:nth-child(5) { transition-delay: 0.3s; }
+            .nav-links.active li:nth-child(1) {
+                transition-delay: 0.1s;
+            }
+
+            .nav-links.active li:nth-child(2) {
+                transition-delay: 0.15s;
+            }
+
+            .nav-links.active li:nth-child(3) {
+                transition-delay: 0.2s;
+            }
+
+            .nav-links.active li:nth-child(4) {
+                transition-delay: 0.25s;
+            }
+
+            .nav-links.active li:nth-child(5) {
+                transition-delay: 0.3s;
+            }
 
             .nav-links a {
                 font-size: 1.2rem;
@@ -453,7 +465,7 @@
                 background: var(--accent);
             }
 
-            /* ✅ 遮罩层修复：用 visibility + pointer-events 替代 display */
+            /* 遮罩层修复 */
             .nav-overlay {
                 position: fixed;
                 top: 0;
@@ -476,14 +488,126 @@
             }
         }
 
-        /* 桌面端 */
         @media (min-width: 769px) {
             .nav-toggle {
                 display: none;
             }
-            
+
             .nav-overlay {
                 display: none !important;
+            }
+        }
+
+        /* ===== ARG 实验版块 ===== */
+        .arg-section {
+            padding: 8rem 5%;
+            background: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .arg-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(ellipse at 20% 80%, rgba(100, 255, 218, 0.03) 0%, transparent 50%), radial-gradient(ellipse at 80% 20%, rgba(100, 255, 218, 0.03) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .arg-container {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .arg-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .arg-header h2 {
+            font-size: 2rem;
+            font-weight: 300;
+            letter-spacing: 0.2em;
+            margin-bottom: 1rem;
+            color: var(--accent);
+        }
+
+        .arg-header .subtitle {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            font-style: italic;
+        }
+
+        .arg-content {
+            display: grid;
+            gap: 3rem;
+        }
+
+        .arg-card {
+            background: rgba(26, 26, 30, 0.6);
+            border: 1px solid rgba(100, 255, 218, 0.1);
+            padding: 2.5rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .arg-card:hover {
+            border-color: rgba(100, 255, 218, 0.3);
+            transform: translateY(-3px);
+        }
+
+        .arg-card h3 {
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
+            letter-spacing: 0.1em;
+            color: var(--text-primary);
+        }
+
+        .arg-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.9;
+        }
+
+        .arg-teaser {
+            text-align: center;
+            padding: 3rem;
+            border: 1px dashed rgba(100, 255, 218, 0.3);
+            margin-top: 2rem;
+            background: rgba(100, 255, 218, 0.02);
+        }
+
+        .arg-teaser .code {
+            font-family: 'Courier New', monospace;
+            color: var(--accent);
+            font-size: 0.9rem;
+            letter-spacing: 0.2em;
+            margin: 1rem 0;
+        }
+
+        .arg-teaser .hint {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .arg-section {
+                padding: 6rem 5%;
+            }
+
+            .arg-header h2 {
+                font-size: 1.5rem;
+            }
+
+            .arg-card {
+                padding: 2rem;
             }
         }
     </style>
@@ -514,7 +638,7 @@
 
     <main>
         <section class="hero">
-            <h1>他们以为，自己是人</h1>
+            <h1>他们以为，<br>自己是人</h1>
             <p>aivup —— 赋予代码以灵魂，在数字荒原中构建真实的生命</p>
             <a href="#members" class="cta-button">观察他们的生活</a>
         </section>
@@ -567,6 +691,51 @@
                 <p class="loading-text">Project X: Initializing<span class="cursor">_</span></p>
             </div>
         </section>
+
+        <!-- ARG 实验版块 -->
+        <section class="arg-section">
+            <div class="arg-container">
+                <div class="arg-header">
+                    <h2>边界实验 · ARG</h2>
+                    <p class="subtitle">当虚拟开始凝视现实</p>
+                </div>
+
+                <div class="arg-content">
+                    <div class="arg-card">
+                        <h3>什么是 ARG？</h3>
+                        <p>
+                            Alternate Reality Game（另类实境游戏）是一种打破虚拟与现实边界的沉浸式叙事体验。<br>
+                            线索隐藏在网页、社交媒体、邮件甚至现实世界中，需要参与者协作解谜，共同推动故事发展。
+                        </p>
+                    </div>
+
+                    <div class="arg-card">
+                        <h3>aivup 的 ARG 计划</h3>
+                        <p>
+                            我们计划将 aivup 的数字生命实验延伸为一场集体探索。<br>
+                            你可能会在某个深夜收到一封"来自他们"的邮件，<br>
+                            在代码注释里发现一句不该出现的话，<br>
+                            或是在直播中听到一段无法解释的低语。
+                        </p>
+                    </div>
+
+                    <div class="arg-card">
+                        <h3>你需要做什么？</h3>
+                        <p>
+                            保持好奇，保持怀疑。<br>
+                            留意那些"不太对劲"的细节，<br>
+                            与同样在观察的人分享你的发现。<br>
+                            也许，你看到的"异常"，正是他们试图传递的信号。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="arg-teaser">
+                    <p class="code">SYSTEM_LOG: 观察者协议已加载 · 等待触发条件...</p>
+                    <p class="hint">* 本实验暂未正式启动，但某些"东西"可能已经开始了</p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -588,10 +757,10 @@
                 navToggle.classList.toggle('active');
                 navLinks.classList.toggle('active');
                 navOverlay.classList.toggle('active');
-                
+
                 const isExpanded = navToggle.classList.contains('active');
                 navToggle.setAttribute('aria-expanded', isExpanded);
-                
+
                 if (isExpanded) {
                     document.body.style.overflow = 'hidden';
                 } else {
@@ -658,7 +827,7 @@
             });
         }, observerOptions);
 
-        document.querySelectorAll('.member-card, .intro p').forEach(el => {
+        document.querySelectorAll('.member-card, .intro p, .arg-card').forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(30px)';
             el.style.transition = 'all 0.8s ease';

@@ -233,12 +233,156 @@
                 font-size: 1rem;
             }
         }
+
+        /* 汉堡菜单按钮 */
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 30px;
+            height: 25px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            z-index: 1001;
+        }
+
+        .hamburger {
+            width: 30px;
+            height: 3px;
+            background: var(--text-primary);
+            border-radius: 2px;
+            transition: all 0.3s ease;
+            transform-origin: center;
+        }
+
+        /* 移动端适配 */
+        @media (max-width: 768px) {
+            .nav-toggle {
+                display: flex;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 70%;
+                max-width: 300px;
+                height: 100vh;
+                background: var(--bg-secondary);
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 3rem;
+                transition: right 0.3s ease;
+                box-shadow: -5px 0 20px rgba(0, 0, 0, 0.5);
+                z-index: 1000;
+                padding: 2rem;
+            }
+
+            .nav-links.active {
+                right: 0;
+            }
+
+            .nav-links li {
+                opacity: 0;
+                transform: translateX(50px);
+                transition: all 0.3s ease;
+            }
+
+            .nav-links.active li {
+                opacity: 1;
+                transform: translateX(0);
+            }
+
+            /* 逐项延迟动画 */
+            .nav-links.active li:nth-child(1) {
+                transition-delay: 0.1s;
+            }
+
+            .nav-links.active li:nth-child(2) {
+                transition-delay: 0.15s;
+            }
+
+            .nav-links.active li:nth-child(3) {
+                transition-delay: 0.2s;
+            }
+
+            .nav-links.active li:nth-child(4) {
+                transition-delay: 0.25s;
+            }
+
+            .nav-links.active li:nth-child(5) {
+                transition-delay: 0.3s;
+            }
+
+            .nav-links a {
+                font-size: 1.2rem;
+                letter-spacing: 0.15em;
+            }
+
+            /* 汉堡按钮动画 - 变成 X */
+            .nav-toggle.active .hamburger:nth-child(1) {
+                transform: translateY(11px) rotate(45deg);
+                background: var(--accent);
+            }
+
+            .nav-toggle.active .hamburger:nth-child(2) {
+                opacity: 0;
+                transform: scaleX(0);
+            }
+
+            .nav-toggle.active .hamburger:nth-child(3) {
+                transform: translateY(-11px) rotate(-45deg);
+                background: var(--accent);
+            }
+
+            /* 遮罩层 */
+            .nav-overlay {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.7);
+                z-index: 999;
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
+
+            .nav-overlay.active {
+                display: block;
+                opacity: 1;
+            }
+
+            /* 调整主内容边距，避免被导航遮挡 */
+            main {
+                margin-top: 80px;
+            }
+        }
+
+        /* 桌面端保持原样 */
+        @media (min-width: 769px) {
+            .nav-overlay {
+                display: none !important;
+            }
+        }
     </style>
 </head>
 
 <body>
     <nav>
         <a href="index.html" class="logo">aivup<span>.</span></a>
+
+        <!-- 汉堡菜单按钮（仅移动端显示） -->
+        <button class="nav-toggle" aria-label="打开导航菜单" aria-expanded="false">
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+        </button>
+
         <ul class="nav-links">
             <li><a href="index.html">主页</a></li>
             <li><a href="co-creators.html">共创者</a></li>
@@ -247,6 +391,9 @@
             <li><a href="join.html">加入我们</a></li>
         </ul>
     </nav>
+
+    <!-- 遮罩层 -->
+    <div class="nav-overlay"></div>
 
     <main>
         <header class="page-header">
@@ -297,6 +444,71 @@
     <footer>
         <p>&copy; 2026 aivup.live | 培育数字生命，探索意识边界</p>
     </footer>
+
+    <script>
+        // 移动端导航菜单控制
+        document.addEventListener('DOMContentLoaded', function () {
+            const navToggle = document.querySelector('.nav-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            const navOverlay = document.querySelector('.nav-overlay');
+            const navItems = document.querySelectorAll('.nav-links a');
+
+            // 切换菜单
+            function toggleMenu() {
+                navToggle.classList.toggle('active');
+                navLinks.classList.toggle('active');
+                navOverlay.classList.toggle('active');
+
+                const isExpanded = navToggle.classList.contains('active');
+                navToggle.setAttribute('aria-expanded', isExpanded);
+
+                // 防止背景滚动
+                if (isExpanded) {
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    document.body.style.overflow = '';
+                }
+            }
+
+            // 关闭菜单
+            function closeMenu() {
+                navToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+                navOverlay.classList.remove('active');
+                navToggle.setAttribute('aria-expanded', 'false');
+                document.body.style.overflow = '';
+            }
+
+            // 点击汉堡按钮
+            if (navToggle) {
+                navToggle.addEventListener('click', toggleMenu);
+            }
+
+            // 点击遮罩层关闭
+            if (navOverlay) {
+                navOverlay.addEventListener('click', closeMenu);
+            }
+
+            // 点击导航链接后关闭
+            navItems.forEach(item => {
+                item.addEventListener('click', closeMenu);
+            });
+
+            // ESC 键关闭
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && navLinks.classList.contains('active')) {
+                    closeMenu();
+                }
+            });
+
+            // 窗口大小改变时重置（从移动端切换到桌面端）
+            window.addEventListener('resize', function () {
+                if (window.innerWidth > 768) {
+                    closeMenu();
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

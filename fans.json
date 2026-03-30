@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-30T12:52:05.578Z",
+  "generatedAt": "2026-03-30T14:20:32.301Z",
   "creators": {
     "3690985523514020": {
       "name": "Kansatsu",
       "stats": {
-        "total": 22,
+        "total": 24,
         "captains": 4,
-        "fansOnly": 18
+        "fansOnly": 20
       },
       "fans": [
         {
@@ -36,6 +36,13 @@
           "level": 23,
           "isCaptain": true,
           "guardLevel": 3
+        },
+        {
+          "uid": "362359061",
+          "name": "笨蛋调试器",
+          "level": 22,
+          "isCaptain": false,
+          "guardLevel": 0
         },
         {
           "uid": "491378910",
@@ -73,16 +80,23 @@
           "guardLevel": 0
         },
         {
-          "uid": "630889202",
-          "name": "あなたが一番好きovo",
+          "uid": "1404549522",
+          "name": "本鼓",
           "level": 13,
           "isCaptain": false,
           "guardLevel": 0
         },
         {
-          "uid": "1404549522",
-          "name": "本鼓",
-          "level": 12,
+          "uid": "3984796",
+          "name": "寒霜冰飞",
+          "level": 13,
+          "isCaptain": false,
+          "guardLevel": 0
+        },
+        {
+          "uid": "630889202",
+          "name": "あなたが一番好きovo",
+          "level": 13,
           "isCaptain": false,
           "guardLevel": 0
         },
@@ -167,7 +181,7 @@
     }
   },
   "totalStats": {
-    "totalFans": 22,
+    "totalFans": 24,
     "totalCaptains": 4
   }
 }

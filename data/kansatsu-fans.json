@@ -2,11 +2,11 @@
   "uid": "3690985523514020",
   "creatorName": "Kansatsu",
   "roomId": 1713821248,
-  "generatedAt": "2026-03-30T14:20:32.299Z",
+  "generatedAt": "2026-03-30T15:59:55.475Z",
   "stats": {
-    "total": 24,
-    "captains": 4,
-    "fansOnly": 20
+    "total": 28,
+    "captains": 6,
+    "fansOnly": 22
   },
   "fans": [
     {
@@ -34,6 +34,20 @@
       "uid": "22589642",
       "name": "冰柠檬扫地机",
       "level": 23,
+      "isCaptain": true,
+      "guardLevel": 3
+    },
+    {
+      "uid": "479320250",
+      "name": "一只小冰吖",
+      "level": 22,
+      "isCaptain": true,
+      "guardLevel": 3
+    },
+    {
+      "uid": "3984796",
+      "name": "寒霜冰飞",
+      "level": 21,
       "isCaptain": true,
       "guardLevel": 3
     },
@@ -87,8 +101,8 @@
       "guardLevel": 0
     },
     {
-      "uid": "3984796",
-      "name": "寒霜冰飞",
+      "uid": "1570146264",
+      "name": "雾影提灯",
       "level": 13,
       "isCaptain": false,
       "guardLevel": 0
@@ -97,13 +111,6 @@
       "uid": "630889202",
       "name": "あなたが一番好きovo",
       "level": 13,
-      "isCaptain": false,
-      "guardLevel": 0
-    },
-    {
-      "uid": "1570146264",
-      "name": "雾影提灯",
-      "level": 12,
       "isCaptain": false,
       "guardLevel": 0
     },
@@ -136,6 +143,20 @@
       "guardLevel": 0
     },
     {
+      "uid": "1888044797",
+      "name": "Titanium_Dioxide",
+      "level": 11,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "34622332",
+      "name": "幻想-杀手",
+      "level": 11,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
       "uid": "38822387",
       "name": "绿叶-乘-风破浪-前行",
       "level": 11,
@@ -145,7 +166,7 @@
     {
       "uid": "451338243",
       "name": "Mosalov",
-      "level": 9,
+      "level": 10,
       "isCaptain": false,
       "guardLevel": 0
     },
@@ -166,6 +187,13 @@
     {
       "uid": "401964279",
       "name": "MUYUE壹月一",
+      "level": 5,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "450432075",
+      "name": "月战酪饼",
       "level": 5,
       "isCaptain": false,
       "guardLevel": 0

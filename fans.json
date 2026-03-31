@@ -1,17 +1,24 @@
 {
-  "generatedAt": "2026-03-31T12:50:48.763Z",
+  "generatedAt": "2026-03-31T14:22:18.362Z",
   "creators": {
     "3690985523514020": {
       "name": "Kansatsu",
       "stats": {
-        "total": 28,
-        "captains": 6,
+        "total": 29,
+        "captains": 7,
         "fansOnly": 22
       },
       "fans": [
         {
           "uid": "149652883",
           "name": "木子不是木子狸",
+          "level": 26,
+          "isCaptain": true,
+          "guardLevel": 3
+        },
+        {
+          "uid": "362359061",
+          "name": "笨蛋调试器",
           "level": 26,
           "isCaptain": true,
           "guardLevel": 3
@@ -50,13 +57,6 @@
           "level": 21,
           "isCaptain": true,
           "guardLevel": 3
-        },
-        {
-          "uid": "362359061",
-          "name": "笨蛋调试器",
-          "level": 22,
-          "isCaptain": false,
-          "guardLevel": 0
         },
         {
           "uid": "491378910",
@@ -129,6 +129,13 @@
           "guardLevel": 0
         },
         {
+          "uid": "38822387",
+          "name": "绿叶-乘-风破浪-前行",
+          "level": 12,
+          "isCaptain": false,
+          "guardLevel": 0
+        },
+        {
           "uid": "74157631",
           "name": "血墨霊",
           "level": 12,
@@ -152,13 +159,6 @@
         {
           "uid": "34622332",
           "name": "幻想-杀手",
-          "level": 11,
-          "isCaptain": false,
-          "guardLevel": 0
-        },
-        {
-          "uid": "38822387",
-          "name": "绿叶-乘-风破浪-前行",
           "level": 11,
           "isCaptain": false,
           "guardLevel": 0
@@ -199,6 +199,13 @@
           "guardLevel": 0
         },
         {
+          "uid": "65565989",
+          "name": "名字不够s呢",
+          "level": 5,
+          "isCaptain": false,
+          "guardLevel": 0
+        },
+        {
           "uid": "1092162257",
           "name": "canyon_nico",
           "level": 4,
@@ -209,7 +216,7 @@
     }
   },
   "totalStats": {
-    "totalFans": 28,
-    "totalCaptains": 6
+    "totalFans": 29,
+    "totalCaptains": 7
   }
 }

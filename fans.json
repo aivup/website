@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-04-01T12:53:03.369Z",
+  "generatedAt": "2026-04-01T14:24:50.580Z",
   "creators": {
     "3690985523514020": {
       "name": "Kansatsu",
       "stats": {
-        "total": 32,
+        "total": 34,
         "captains": 7,
-        "fansOnly": 25
+        "fansOnly": 27
       },
       "fans": [
         {
@@ -75,7 +75,7 @@
         {
           "uid": "510941286",
           "name": "阳光男孩游城十代",
-          "level": 16,
+          "level": 17,
           "isCaptain": false,
           "guardLevel": 0
         },
@@ -173,7 +173,7 @@
         {
           "uid": "451338243",
           "name": "Mosalov",
-          "level": 10,
+          "level": 11,
           "isCaptain": false,
           "guardLevel": 0
         },
@@ -181,6 +181,20 @@
           "uid": "604403",
           "name": "三司あやせのパッド",
           "level": 9,
+          "isCaptain": false,
+          "guardLevel": 0
+        },
+        {
+          "uid": "1143640639",
+          "name": "一支树人Lin阿",
+          "level": 8,
+          "isCaptain": false,
+          "guardLevel": 0
+        },
+        {
+          "uid": "494317457",
+          "name": "Schwarz0079",
+          "level": 8,
           "isCaptain": false,
           "guardLevel": 0
         },
@@ -195,6 +209,13 @@
           "uid": "65565989",
           "name": "名字不够s呢",
           "level": 6,
+          "isCaptain": false,
+          "guardLevel": 0
+        },
+        {
+          "uid": "391685867",
+          "name": "忍鲨sharninjak",
+          "level": 5,
           "isCaptain": false,
           "guardLevel": 0
         },
@@ -225,19 +246,12 @@
           "level": 3,
           "isCaptain": false,
           "guardLevel": 0
-        },
-        {
-          "uid": "391685867",
-          "name": "忍鲨sharninjak",
-          "level": 3,
-          "isCaptain": false,
-          "guardLevel": 0
         }
       ]
     }
   },
   "totalStats": {
-    "totalFans": 32,
+    "totalFans": 34,
     "totalCaptains": 7
   }
 }

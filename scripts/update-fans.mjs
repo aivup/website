@@ -11,6 +11,16 @@ const CONFIG = {
             uid: '3690985523514020',
             name: 'Kansatsu',
             outputPrefix: 'kansatsu'
+        },
+        {
+            uid: '689955798',
+            name: 'Dolphin',
+            outputPrefix: 'dolphin'
+        },
+        {
+            uid: '491378910',
+            name: 'Yumee',
+            outputPrefix: 'yumee'
         }
     ],
     outputDir: 'data',

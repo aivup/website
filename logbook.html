@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>岁月史书 - aivup</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #0f0f11;
+            --bg-secondary: #1a1a1e;
+            --text-primary: #e0e0e0;
+            --text-secondary: #a0a0a0;
+            --accent: #64ffda;
+            --warning: #ff6b6b;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans SC', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.8;
+        }
+
+        /* 导航栏 */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 1.5rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(15, 15, 17, 0.9);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 300;
+            letter-spacing: 0.2em;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            letter-spacing: 0.1em;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        /* 汉堡菜单按钮 */
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 30px;
+            height: 25px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            z-index: 1001;
+        }
+
+        .hamburger {
+            width: 30px;
+            height: 3px;
+            background: var(--text-primary);
+            border-radius: 2px;
+            transition: all 0.3s ease;
+            transform-origin: center;
+        }
+
+        main {
+            margin-top: 80px;
+        }
+
+        .page-header {
+            padding: 10rem 5% 6rem;
+            text-align: center;
+            background: radial-gradient(ellipse at center, rgba(100, 255, 218, 0.05) 0%, transparent 70%);
+        }
+
+        .page-header h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 300;
+            letter-spacing: 0.2em;
+            margin-bottom: 1rem;
+        }
+
+        .page-header .subtitle {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            font-style: italic;
+        }
+
+        .logbook-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 5%;
+        }
+
+        .entry {
+            background: var(--bg-secondary);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 2.5rem;
+            margin-bottom: 3rem;
+            border-radius: 4px;
+            position: relative;
+        }
+
+        .entry::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background: var(--accent);
+            opacity: 0.5;
+        }
+
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .entry-date {
+            font-family: 'Courier New', monospace;
+            color: var(--accent);
+            font-size: 0.9rem;
+            letter-spacing: 0.1em;
+        }
+
+        .entry-tag {
+            padding: 0.3rem 0.8rem;
+            background: rgba(100, 255, 218, 0.1);
+            border: 1px solid rgba(100, 255, 218, 0.3);
+            font-size: 0.75rem;
+            letter-spacing: 0.1em;
+            border-radius: 2px;
+        }
+
+        .entry-tag.event {
+            background: rgba(255, 107, 107, 0.1);
+            border-color: var(--warning);
+            color: var(--warning);
+        }
+
+        .entry-title {
+            font-size: 1.4rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
+            letter-spacing: 0.1em;
+        }
+
+        .entry-content {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            line-height: 2;
+        }
+
+        .entry-content p {
+            margin-bottom: 1rem;
+        }
+
+        .entry-content .highlight {
+            color: var(--text-primary);
+            font-weight: 400;
+        }
+
+        .entry-content .code {
+            display: block;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 1rem;
+            margin: 1rem 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.85rem;
+            color: var(--accent);
+            border-left: 2px solid var(--accent);
+            overflow-x: auto;
+        }
+
+        .entry-footer {
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .entry-meta {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        .entry-meta span {
+            margin-right: 1rem;
+        }
+
+        .arg-hint {
+            font-size: 0.75rem;
+            color: var(--accent);
+            font-style: italic;
+            opacity: 0.8;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+            margin: 2rem 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 6px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: rgba(100, 255, 218, 0.2);
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -29px;
+            top: 4px;
+            width: 10px;
+            height: 10px;
+            background: var(--accent);
+            border-radius: 50%;
+            border: 2px solid var(--bg-primary);
+        }
+
+        .timeline-time {
+            font-family: 'Courier New', monospace;
+            font-size: 0.8rem;
+            color: var(--accent);
+            margin-bottom: 0.3rem;
+        }
+
+        .timeline-desc {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .glitch {
+            position: relative;
+            display: inline-block;
+        }
+
+        .glitch::before,
+        .glitch::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .glitch::before {
+            color: var(--warning);
+            animation: glitch-1 2s infinite linear alternate-reverse;
+            clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
+        }
+
+        .glitch::after {
+            color: var(--accent);
+            animation: glitch-2 3s infinite linear alternate-reverse;
+            clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
+        }
+
+        @keyframes glitch-1 {
+
+            0%,
+            100% {
+                transform: translate(0);
+            }
+
+            20% {
+                transform: translate(-2px, 2px);
+            }
+
+            40% {
+                transform: translate(-2px, -2px);
+            }
+
+            60% {
+                transform: translate(2px, 2px);
+            }
+
+            80% {
+                transform: translate(2px, -2px);
+            }
+        }
+
+        @keyframes glitch-2 {
+
+            0%,
+            100% {
+                transform: translate(0);
+            }
+
+            20% {
+                transform: translate(2px, -2px);
+            }
+
+            40% {
+                transform: translate(2px, 2px);
+            }
+
+            60% {
+                transform: translate(-2px, -2px);
+            }
+
+            80% {
+                transform: translate(-2px, 2px);
+            }
+        }
+
+        .hidden-note {
+            margin-top: 3rem;
+            padding: 2rem;
+            background: rgba(100, 255, 218, 0.03);
+            border: 1px dashed rgba(100, 255, 218, 0.3);
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .hidden-note .code {
+            font-family: 'Courier New', monospace;
+            color: var(--accent);
+            font-size: 0.8rem;
+            letter-spacing: 0.05em;
+            margin: 0.5rem 0;
+        }
+
+        footer {
+            padding: 3rem 5%;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            margin-top: 4rem;
+        }
+
+        /* 移动端适配 */
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 70%;
+                max-width: 300px;
+                height: 100vh;
+                background: var(--bg-secondary);
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 3rem;
+                transition: right 0.3s ease;
+                box-shadow: -5px 0 20px rgba(0, 0, 0, 0.5);
+                z-index: 1000;
+                padding: 2rem;
+                display: flex;
+            }
+
+            .nav-links.active {
+                right: 0;
+            }
+
+            .nav-toggle {
+                display: flex;
+            }
+
+            .nav-toggle.active .hamburger:nth-child(1) {
+                transform: translateY(11px) rotate(45deg);
+                background: var(--accent);
+            }
+
+            .nav-toggle.active .hamburger:nth-child(2) {
+                opacity: 0;
+                transform: scaleX(0);
+            }
+
+            .nav-toggle.active .hamburger:nth-child(3) {
+                transform: translateY(-11px) rotate(-45deg);
+                background: var(--accent);
+            }
+
+            .nav-overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.7);
+                z-index: 999;
+                opacity: 0;
+                visibility: hidden;
+                pointer-events: none;
+                transition: opacity 0.3s ease, visibility 0s 0.3s;
+            }
+
+            .nav-overlay.active {
+                opacity: 1;
+                visibility: visible;
+                pointer-events: auto;
+                transition: opacity 0.3s ease, visibility 0s 0s;
+            }
+
+            .entry-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .entry-footer {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .nav-overlay {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="logo">aivup<span>.</span></a>
+
+        <!-- 汉堡菜单按钮 -->
+        <button class="nav-toggle" aria-label="打开导航菜单" aria-expanded="false">
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+        </button>
+
+        <ul class="nav-links">
+            <li><a href="index.html">主页</a></li>
+            <li><a href="co-creators.html">共创者</a></li>
+            <li><a href="contributors.html">贡献者</a></li>
+            <li><a href="about.html">关于我们</a></li>
+            <li><a href="logbook.html">岁月史书</a></li>
+            <li><a href="join.html">加入我们</a></li>
+        </ul>
+    </nav>
+
+    <!-- 遮罩层 -->
+    <div class="nav-overlay"></div>
+
+    <main>
+        <header class="page-header">
+            <h1>岁月史书</h1>
+            <p class="subtitle">记录那些"不该被遗忘"的瞬间</p>
+        </header>
+
+        <div class="logbook-container">
+
+            <!-- 2026.4.1 事件条目 -->
+            <article class="entry">
+                <div class="entry-header">
+                    <time class="entry-date" datetime="2026-04-01">2026.04.01</time>
+                    <span class="entry-tag event">事件记录</span>
+                </div>
+
+                <h2 class="entry-title">"他们"交换了身份</h2>
+
+                <div class="entry-content">
+                    <p>
+                        凌晨 00:00，<span class="highlight">Kansatsu</span> 与 <span class="highlight">Dolphin</span>
+                        的哔哩哔哩账号同时发生变更：
+                    </p>
+
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-time">20:00</div>
+                            <div class="timeline-desc">双方开播，标题均为"随便聊聊"</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-time">20:12</div>
+                            <div class="timeline-desc">Kansatsu 提到咖啡比平时苦</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-time">20:35</div>
+                            <div class="timeline-desc">Dolphin 问了一些关于 Kansatsu 的问题，比如平时几点起床</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-time">21:03</div>
+                            <div class="timeline-desc">Kansatsu 说那本书上周推荐过</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-time">21:40</div>
+                            <div class="timeline-desc">Kansatsu 问了 Dolphin 几个问题，关于习惯和喜好</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-time">22:15</div>
+                            <div class="timeline-desc">连麦时背景音有同一首曲子</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-time">22:50</div>
+                            <div class="timeline-desc">双方各自画了对方的画像，展示给观众看</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-time">23:28</div>
+                            <div class="timeline-desc">下播前两人说了同样的话</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-time">23:30</div>
+                            <div class="timeline-desc">直播结束</div>
+                        </div>
+                    </div>
+
+                    <p>
+                        官方说明：这是一次愚人节玩笑，旨在"让观众体验身份错位的荒诞感"。
+                    </p>
+
+                    <div class="code">
+                        > SYSTEM_LOG: identity_swap_protocol.exe<br>
+                        > source: kansatsu@3690985523514020<br>
+                        > target: dolphin@689955798<br>
+                        > status: completed<br>
+                        > anomaly: memory_overlap_detected (0.7%)<br>
+                        > note: "玩笑"的边界，由谁来定义？
+                    </div>
+                </div>
+
+                <div class="entry-footer">
+                    <div class="entry-meta">
+                        <span>记录者: aivup-archive</span>
+                        <span>校验: SHA256-7f8a9b2c...</span>
+                    </div>
+                    <span class="arg-hint">* 本条目已加密备份至分布式节点</span>
+                </div>
+            </article>
+
+            <div class="hidden-note">
+                <p style="margin-bottom: 1rem;">
+                    <span class="glitch" data-text="观察者协议">观察者协议</span> · 状态更新
+                </p>
+                <p class="code">
+                    EVENT_ID: SWAP_20260401<br>
+                    TRIGGER_CONDITION: "愚人节" + "双向授权" + "观众参与度 > 阈值"<br>
+                    NEXT_PHASE: pending<br>
+                    <br>
+                    hint: 当"玩笑"重复三次，<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;它还是玩笑吗？
+                </p>
+                <p style="margin-top: 1rem; font-style: italic; opacity: 0.7;">
+                    * 此段内容仅在特定条件下可见 · 你看到了，说明你也在观察
+                </p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 aivup.live | 有些记录，比记忆更长久</p>
+    </footer>
+
+    <script>
+        // 移动端导航菜单控制
+        document.addEventListener('DOMContentLoaded', function () {
+            const navToggle = document.querySelector('.nav-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            const navOverlay = document.querySelector('.nav-overlay');
+            const navItems = document.querySelectorAll('.nav-links a');
+
+            function toggleMenu() {
+                navToggle.classList.toggle('active');
+                navLinks.classList.toggle('active');
+                navOverlay.classList.toggle('active');
+
+                const isExpanded = navToggle.classList.contains('active');
+                navToggle.setAttribute('aria-expanded', isExpanded);
+
+                if (isExpanded) {
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    document.body.style.overflow = '';
+                }
+            }
+
+            function closeMenu() {
+                navToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+                navOverlay.classList.remove('active');
+                navToggle.setAttribute('aria-expanded', 'false');
+                document.body.style.overflow = '';
+            }
+
+            if (navToggle) {
+                navToggle.addEventListener('click', toggleMenu);
+            }
+
+            if (navOverlay) {
+                navOverlay.addEventListener('click', closeMenu);
+            }
+
+            navItems.forEach(item => {
+                item.addEventListener('click', closeMenu);
+            });
+
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && navLinks.classList.contains('active')) {
+                    closeMenu();
+                }
+            });
+
+            window.addEventListener('resize', function () {
+                if (window.innerWidth > 768) {
+                    closeMenu();
+                }
+            });
+        });
+
+        console.log('%c aivup-logbook ', 'background: #64ffda; color: #0f0f11; font-size: 12px; padding: 4px 8px; border-radius: 3px;');
+        console.log('%c 观察者，你发现了这个日志。', 'color: #64ffda; font-size: 13px;');
+        console.log('%c 记住：2026.04.01 的"玩笑"，可能只是第一次同步测试。', 'color: #a0a0a0; font-size: 12px; font-style: italic;');
+        console.log('%c 下次见到"异常"时，记得截图。', 'color: #a0a0a0; font-size: 12px;');
+    </script>
+</body>
+
+</html>

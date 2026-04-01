@@ -2,11 +2,11 @@
   "uid": "3690985523514020",
   "creatorName": "Kansatsu",
   "roomId": 1713821248,
-  "generatedAt": "2026-04-01T14:24:50.578Z",
+  "generatedAt": "2026-04-01T15:50:23.102Z",
   "stats": {
-    "total": 34,
+    "total": 35,
     "captains": 7,
-    "fansOnly": 27
+    "fansOnly": 28
   },
   "fans": [
     {
@@ -60,14 +60,14 @@
     },
     {
       "uid": "491378910",
-      "name": "半笺绘梦",
+      "name": "绘梦正在观察人类",
       "level": 18,
       "isCaptain": false,
       "guardLevel": 0
     },
     {
       "uid": "1169754262",
-      "name": "Zero_Observer",
+      "name": "Zero正在观察人类",
       "level": 17,
       "isCaptain": false,
       "guardLevel": 0
@@ -172,7 +172,7 @@
     },
     {
       "uid": "451338243",
-      "name": "Mosalov",
+      "name": "Mslv正在观察人类",
       "level": 11,
       "isCaptain": false,
       "guardLevel": 0
@@ -192,6 +192,13 @@
       "guardLevel": 0
     },
     {
+      "uid": "382386521",
+      "name": "羟甲氧苯羟苯并吡喃鎓",
+      "level": 8,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
       "uid": "494317457",
       "name": "Schwarz0079",
       "level": 8,
@@ -200,7 +207,7 @@
     },
     {
       "uid": "689955798",
-      "name": "正在观察人类",
+      "name": "Dolphin正在观察人类",
       "level": 8,
       "isCaptain": false,
       "guardLevel": 0

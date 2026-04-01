@@ -1,0 +1,69 @@
+{
+  "uid": "491378910",
+  "creatorName": "Yumee",
+  "roomId": 1935935504,
+  "generatedAt": "2026-04-01T15:50:24.736Z",
+  "stats": {
+    "total": 8,
+    "captains": 5,
+    "fansOnly": 3
+  },
+  "fans": [
+    {
+      "uid": "3632306426219339",
+      "name": "芸中幻梦",
+      "level": 26,
+      "isCaptain": true,
+      "guardLevel": 3
+    },
+    {
+      "uid": "1624457594",
+      "name": "Good猫柠ya",
+      "level": 24,
+      "isCaptain": true,
+      "guardLevel": 3
+    },
+    {
+      "uid": "316976273",
+      "name": "田豆豆_kaleyou",
+      "level": 24,
+      "isCaptain": true,
+      "guardLevel": 3
+    },
+    {
+      "uid": "3546821223779148",
+      "name": "兔玖儿tu-好运版",
+      "level": 24,
+      "isCaptain": true,
+      "guardLevel": 3
+    },
+    {
+      "uid": "3546932968425670",
+      "name": "幻月玲兔",
+      "level": 24,
+      "isCaptain": true,
+      "guardLevel": 3
+    },
+    {
+      "uid": "447386656",
+      "name": "Sigazen",
+      "level": 18,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "300334753",
+      "name": "雪雪PIG-私皮筹备中",
+      "level": 10,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "3632304161294458",
+      "name": "栗栗提子",
+      "level": 2,
+      "isCaptain": false,
+      "guardLevel": 0
+    }
+  ]
+}

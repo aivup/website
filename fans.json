@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-03T15:31:59.058Z",
+  "generatedAt": "2026-04-03T16:27:53.574Z",
   "creators": {
     "491378910": {
       "name": "Yumee",
@@ -241,9 +241,9 @@
     "3690985523514020": {
       "name": "Kansatsu",
       "stats": {
-        "total": 35,
+        "total": 36,
         "captains": 7,
-        "fansOnly": 28
+        "fansOnly": 29
       },
       "fans": [
         {
@@ -331,6 +331,13 @@
           "guardLevel": 0
         },
         {
+          "uid": "1570146264",
+          "name": "雾影提灯",
+          "level": 14,
+          "isCaptain": false,
+          "guardLevel": 0
+        },
+        {
           "uid": "630889202",
           "name": "あなたが一番好きovo",
           "level": 14,
@@ -340,13 +347,6 @@
         {
           "uid": "1404549522",
           "name": "本鼓",
-          "level": 13,
-          "isCaptain": false,
-          "guardLevel": 0
-        },
-        {
-          "uid": "1570146264",
-          "name": "雾影提灯",
           "level": 13,
           "isCaptain": false,
           "guardLevel": 0
@@ -375,6 +375,13 @@
         {
           "uid": "38822387",
           "name": "绿叶-乘-风破浪-前行",
+          "level": 12,
+          "isCaptain": false,
+          "guardLevel": 0
+        },
+        {
+          "uid": "506420276",
+          "name": "命微suloy",
           "level": 12,
           "isCaptain": false,
           "guardLevel": 0
@@ -495,7 +502,7 @@
     }
   },
   "totalStats": {
-    "totalFans": 66,
+    "totalFans": 67,
     "totalCaptains": 23
   }
 }

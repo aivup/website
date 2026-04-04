@@ -2,11 +2,11 @@
   "uid": "689955798",
   "creatorName": "Dolphin",
   "roomId": 1917337166,
-  "generatedAt": "2026-04-04T15:20:52.943Z",
+  "generatedAt": "2026-04-04T16:22:52.478Z",
   "stats": {
-    "total": 33,
+    "total": 35,
     "captains": 12,
-    "fansOnly": 21
+    "fansOnly": 23
   },
   "fans": [
     {
@@ -136,6 +136,13 @@
       "guardLevel": 0
     },
     {
+      "uid": "488266759",
+      "name": "ultra佩佩",
+      "level": 17,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
       "uid": "3546683839350785",
       "name": "メ二アル_Ame",
       "level": 16,
@@ -185,6 +192,13 @@
       "guardLevel": 0
     },
     {
+      "uid": "398404885",
+      "name": "-空梦君-",
+      "level": 13,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
       "uid": "470302567",
       "name": "a_secret_past",
       "level": 11,
@@ -213,6 +227,13 @@
       "guardLevel": 0
     },
     {
+      "uid": "269048057",
+      "name": "雪音沢羽sawawa",
+      "level": 8,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
       "uid": "1107870854",
       "name": "飴美夜リシロ",
       "level": 7,
@@ -220,16 +241,9 @@
       "guardLevel": 0
     },
     {
-      "uid": "269048057",
-      "name": "雪音沢羽sawawa",
-      "level": 7,
-      "isCaptain": false,
-      "guardLevel": 0
-    },
-    {
       "uid": "491378910",
       "name": "绘梦正在观察人类",
-      "level": 6,
+      "level": 7,
       "isCaptain": false,
       "guardLevel": 0
     },

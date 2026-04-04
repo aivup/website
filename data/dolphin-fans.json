@@ -2,11 +2,11 @@
   "uid": "689955798",
   "creatorName": "Dolphin",
   "roomId": 1917337166,
-  "generatedAt": "2026-04-04T13:44:25.013Z",
+  "generatedAt": "2026-04-04T14:24:38.544Z",
   "stats": {
-    "total": 29,
+    "total": 31,
     "captains": 11,
-    "fansOnly": 18
+    "fansOnly": 20
   },
   "fans": [
     {
@@ -132,6 +132,20 @@
       "uid": "18060226",
       "name": "雨宮霧城Rishiro",
       "level": 17,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "3546683839350785",
+      "name": "メ二アル_Ame",
+      "level": 16,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "36304080",
+      "name": "時崎神夜小同学",
+      "level": 15,
       "isCaptain": false,
       "guardLevel": 0
     },

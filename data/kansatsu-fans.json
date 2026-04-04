@@ -2,7 +2,7 @@
   "uid": "3690985523514020",
   "creatorName": "Kansatsu",
   "roomId": 1713821248,
-  "generatedAt": "2026-04-04T01:11:21.563Z",
+  "generatedAt": "2026-04-04T04:06:55.746Z",
   "stats": {
     "total": 36,
     "captains": 7,
@@ -143,6 +143,13 @@
       "guardLevel": 0
     },
     {
+      "uid": "451338243",
+      "name": "Mslv正在观察人类",
+      "level": 12,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
       "uid": "506420276",
       "name": "命微suloy",
       "level": 12,
@@ -173,13 +180,6 @@
     {
       "uid": "34622332",
       "name": "幻想-杀手",
-      "level": 11,
-      "isCaptain": false,
-      "guardLevel": 0
-    },
-    {
-      "uid": "451338243",
-      "name": "Mslv正在观察人类",
       "level": 11,
       "isCaptain": false,
       "guardLevel": 0

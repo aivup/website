@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-04T11:20:30.977Z",
+  "generatedAt": "2026-04-04T12:30:37.018Z",
   "creators": {
     "491378910": {
       "name": "Yumee",
@@ -70,9 +70,9 @@
     "689955798": {
       "name": "Dolphin",
       "stats": {
-        "total": 23,
+        "total": 25,
         "captains": 11,
-        "fansOnly": 12
+        "fansOnly": 14
       },
       "fans": [
         {
@@ -111,15 +111,15 @@
           "guardLevel": 3
         },
         {
-          "uid": "119716",
-          "name": "跳啊耀西",
-          "level": 24,
+          "uid": "65565989",
+          "name": "名字不够s呢",
+          "level": 25,
           "isCaptain": true,
           "guardLevel": 3
         },
         {
-          "uid": "65565989",
-          "name": "名字不够s呢",
+          "uid": "119716",
+          "name": "跳啊耀西",
           "level": 24,
           "isCaptain": true,
           "guardLevel": 3
@@ -160,6 +160,13 @@
           "guardLevel": 0
         },
         {
+          "uid": "1724840561",
+          "name": "览䘶不是懒汉",
+          "level": 22,
+          "isCaptain": false,
+          "guardLevel": 0
+        },
+        {
           "uid": "3494364485519906",
           "name": "郵驛薓鄕",
           "level": 22,
@@ -169,14 +176,14 @@
         {
           "uid": "3461573595106260",
           "name": "托尔列夫仓鼠君格勒",
-          "level": 18,
+          "level": 19,
           "isCaptain": false,
           "guardLevel": 0
         },
         {
           "uid": "18060226",
           "name": "雨宮霧城Rishiro",
-          "level": 16,
+          "level": 17,
           "isCaptain": false,
           "guardLevel": 0
         },
@@ -188,15 +195,15 @@
           "guardLevel": 0
         },
         {
-          "uid": "391476451",
-          "name": "端离_PauseF",
-          "level": 13,
+          "uid": "65235906",
+          "name": "苦橙幼果正在观察人类",
+          "level": 14,
           "isCaptain": false,
           "guardLevel": 0
         },
         {
-          "uid": "65235906",
-          "name": "苦橙幼果正在观察人类",
+          "uid": "391476451",
+          "name": "端离_PauseF",
           "level": 13,
           "isCaptain": false,
           "guardLevel": 0
@@ -211,7 +218,14 @@
         {
           "uid": "1169754262",
           "name": "Zero正在观察人类",
-          "level": 9,
+          "level": 10,
+          "isCaptain": false,
+          "guardLevel": 0
+        },
+        {
+          "uid": "7226089",
+          "name": "饿-学不会散射",
+          "level": 10,
           "isCaptain": false,
           "guardLevel": 0
         },
@@ -232,7 +246,7 @@
         {
           "uid": "491378910",
           "name": "绘梦正在观察人类",
-          "level": 5,
+          "level": 6,
           "isCaptain": false,
           "guardLevel": 0
         }
@@ -502,7 +516,7 @@
     }
   },
   "totalStats": {
-    "totalFans": 67,
+    "totalFans": 69,
     "totalCaptains": 23
   }
 }

@@ -2,11 +2,11 @@
   "uid": "689955798",
   "creatorName": "Dolphin",
   "roomId": 1917337166,
-  "generatedAt": "2026-04-04T14:24:38.544Z",
+  "generatedAt": "2026-04-04T15:20:52.943Z",
   "stats": {
-    "total": 31,
-    "captains": 11,
-    "fansOnly": 20
+    "total": 33,
+    "captains": 12,
+    "fansOnly": 21
   },
   "fans": [
     {
@@ -20,6 +20,13 @@
       "uid": "36092718",
       "name": "琉达殊tenzin",
       "level": 28,
+      "isCaptain": true,
+      "guardLevel": 3
+    },
+    {
+      "uid": "3546649406212823",
+      "name": "Cameco_official",
+      "level": 26,
       "isCaptain": true,
       "guardLevel": 3
     },
@@ -85,13 +92,6 @@
       "level": 21,
       "isCaptain": true,
       "guardLevel": 3
-    },
-    {
-      "uid": "3546649406212823",
-      "name": "Cameco_official",
-      "level": 25,
-      "isCaptain": false,
-      "guardLevel": 0
     },
     {
       "uid": "1724840561",
@@ -164,6 +164,13 @@
       "guardLevel": 0
     },
     {
+      "uid": "399982350",
+      "name": "摸鱼蒙阳",
+      "level": 15,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
       "uid": "65235906",
       "name": "苦橙幼果正在观察人类",
       "level": 14,
@@ -185,6 +192,13 @@
       "guardLevel": 0
     },
     {
+      "uid": "7226089",
+      "name": "饿-学不会散射",
+      "level": 11,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
       "uid": "1169754262",
       "name": "Zero_Observer",
       "level": 10,
@@ -192,22 +206,22 @@
       "guardLevel": 0
     },
     {
-      "uid": "7226089",
-      "name": "饿-学不会散射",
-      "level": 10,
-      "isCaptain": false,
-      "guardLevel": 0
-    },
-    {
       "uid": "451338243",
       "name": "Mslv正在观察人类",
-      "level": 9,
+      "level": 10,
       "isCaptain": false,
       "guardLevel": 0
     },
     {
       "uid": "1107870854",
       "name": "飴美夜リシロ",
+      "level": 7,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "269048057",
+      "name": "雪音沢羽sawawa",
       "level": 7,
       "isCaptain": false,
       "guardLevel": 0

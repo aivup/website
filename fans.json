@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-04T12:30:37.018Z",
+  "generatedAt": "2026-04-04T13:44:25.821Z",
   "creators": {
     "491378910": {
       "name": "Yumee",
@@ -70,9 +70,9 @@
     "689955798": {
       "name": "Dolphin",
       "stats": {
-        "total": 25,
+        "total": 29,
         "captains": 11,
-        "fansOnly": 14
+        "fansOnly": 18
       },
       "fans": [
         {
@@ -167,6 +167,13 @@
           "guardLevel": 0
         },
         {
+          "uid": "3493110730459358",
+          "name": "包頭otto_Z",
+          "level": 22,
+          "isCaptain": false,
+          "guardLevel": 0
+        },
+        {
           "uid": "3494364485519906",
           "name": "郵驛薓鄕",
           "level": 22,
@@ -181,6 +188,13 @@
           "guardLevel": 0
         },
         {
+          "uid": "258914523",
+          "name": "ac番剧娘",
+          "level": 18,
+          "isCaptain": false,
+          "guardLevel": 0
+        },
+        {
           "uid": "18060226",
           "name": "雨宮霧城Rishiro",
           "level": 17,
@@ -190,6 +204,13 @@
         {
           "uid": "3706944718113617",
           "name": "极品舞灯NINA_小孩姐",
+          "level": 15,
+          "isCaptain": false,
+          "guardLevel": 0
+        },
+        {
+          "uid": "38822387",
+          "name": "绿叶-乘-风破浪-前行",
           "level": 15,
           "isCaptain": false,
           "guardLevel": 0
@@ -217,7 +238,7 @@
         },
         {
           "uid": "1169754262",
-          "name": "Zero正在观察人类",
+          "name": "Zero_Observer",
           "level": 10,
           "isCaptain": false,
           "guardLevel": 0
@@ -232,7 +253,7 @@
         {
           "uid": "451338243",
           "name": "Mslv正在观察人类",
-          "level": 8,
+          "level": 9,
           "isCaptain": false,
           "guardLevel": 0
         },
@@ -247,6 +268,13 @@
           "uid": "491378910",
           "name": "绘梦正在观察人类",
           "level": 6,
+          "isCaptain": false,
+          "guardLevel": 0
+        },
+        {
+          "uid": "3493107637160754",
+          "name": "小胡几y",
+          "level": 2,
           "isCaptain": false,
           "guardLevel": 0
         }
@@ -318,7 +346,7 @@
         },
         {
           "uid": "1169754262",
-          "name": "Zero正在观察人类",
+          "name": "Zero_Observer",
           "level": 17,
           "isCaptain": false,
           "guardLevel": 0
@@ -516,7 +544,7 @@
     }
   },
   "totalStats": {
-    "totalFans": 69,
+    "totalFans": 73,
     "totalCaptains": 23
   }
 }

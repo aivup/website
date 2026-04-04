@@ -2,7 +2,7 @@
   "uid": "3690985523514020",
   "creatorName": "Kansatsu",
   "roomId": 1713821248,
-  "generatedAt": "2026-04-04T12:30:35.202Z",
+  "generatedAt": "2026-04-04T13:44:24.179Z",
   "stats": {
     "total": 36,
     "captains": 7,
@@ -67,7 +67,7 @@
     },
     {
       "uid": "1169754262",
-      "name": "Zero正在观察人类",
+      "name": "Zero_Observer",
       "level": 17,
       "isCaptain": false,
       "guardLevel": 0

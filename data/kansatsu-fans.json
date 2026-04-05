@@ -2,7 +2,7 @@
   "uid": "3690985523514020",
   "creatorName": "Kansatsu",
   "roomId": 1713821248,
-  "generatedAt": "2026-04-05T15:22:33.289Z",
+  "generatedAt": "2026-04-05T16:24:36.158Z",
   "stats": {
     "total": 38,
     "captains": 7,
@@ -122,6 +122,13 @@
       "guardLevel": 0
     },
     {
+      "uid": "12586930",
+      "name": "立体角w",
+      "level": 12,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
       "uid": "2094570193",
       "name": "直播留档员",
       "level": 12,
@@ -160,13 +167,6 @@
       "uid": "74157631",
       "name": "血墨霊",
       "level": 12,
-      "isCaptain": false,
-      "guardLevel": 0
-    },
-    {
-      "uid": "12586930",
-      "name": "立体角w",
-      "level": 11,
       "isCaptain": false,
       "guardLevel": 0
     },

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-05T14:26:25.599Z",
+  "generatedAt": "2026-04-05T15:22:36.335Z",
   "creators": {
     "491378910": {
       "name": "Yumee",
@@ -325,9 +325,9 @@
     "3690985523514020": {
       "name": "Kansatsu",
       "stats": {
-        "total": 36,
+        "total": 38,
         "captains": 7,
-        "fansOnly": 29
+        "fansOnly": 31
       },
       "fans": [
         {
@@ -415,6 +415,13 @@
           "guardLevel": 0
         },
         {
+          "uid": "1404549522",
+          "name": "本鼓",
+          "level": 14,
+          "isCaptain": false,
+          "guardLevel": 0
+        },
+        {
           "uid": "1570146264",
           "name": "雾影提灯",
           "level": 14,
@@ -429,8 +436,8 @@
           "guardLevel": 0
         },
         {
-          "uid": "1404549522",
-          "name": "本鼓",
+          "uid": "22302167",
+          "name": "苏璐呀",
           "level": 13,
           "isCaptain": false,
           "guardLevel": 0
@@ -438,13 +445,6 @@
         {
           "uid": "2094570193",
           "name": "直播留档员",
-          "level": 12,
-          "isCaptain": false,
-          "guardLevel": 0
-        },
-        {
-          "uid": "22302167",
-          "name": "苏璐呀",
           "level": 12,
           "isCaptain": false,
           "guardLevel": 0
@@ -541,6 +541,13 @@
           "guardLevel": 0
         },
         {
+          "uid": "3546683839350785",
+          "name": "メ二アル_Ame",
+          "level": 6,
+          "isCaptain": false,
+          "guardLevel": 0
+        },
+        {
           "uid": "65565989",
           "name": "名字不够s呢",
           "level": 6,
@@ -581,12 +588,19 @@
           "level": 3,
           "isCaptain": false,
           "guardLevel": 0
+        },
+        {
+          "uid": "327661918",
+          "name": "HiYukio",
+          "level": 2,
+          "isCaptain": false,
+          "guardLevel": 0
         }
       ]
     }
   },
   "totalStats": {
-    "totalFans": 79,
+    "totalFans": 81,
     "totalCaptains": 24
   }
 }

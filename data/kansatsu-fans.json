@@ -2,11 +2,11 @@
   "uid": "3690985523514020",
   "creatorName": "Kansatsu",
   "roomId": 1713821248,
-  "generatedAt": "2026-04-07T12:54:49.228Z",
+  "generatedAt": "2026-04-07T14:25:52.446Z",
   "stats": {
-    "total": 38,
+    "total": 40,
     "captains": 7,
-    "fansOnly": 31
+    "fansOnly": 33
   },
   "fans": [
     {
@@ -185,6 +185,13 @@
       "guardLevel": 0
     },
     {
+      "uid": "35467749",
+      "name": "Hane-47",
+      "level": 9,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
       "uid": "604403",
       "name": "三司あやせのパッド",
       "level": 9,
@@ -194,6 +201,13 @@
     {
       "uid": "1143640639",
       "name": "一支树人Lin阿",
+      "level": 8,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "3546872404773702",
+      "name": "祾九魌097_Official",
       "level": 8,
       "isCaptain": false,
       "guardLevel": 0
@@ -227,16 +241,16 @@
       "guardLevel": 0
     },
     {
-      "uid": "65565989",
-      "name": "名字不够s呢",
+      "uid": "391685867",
+      "name": "忍鲨sharninjak",
       "level": 6,
       "isCaptain": false,
       "guardLevel": 0
     },
     {
-      "uid": "391685867",
-      "name": "忍鲨sharninjak",
-      "level": 5,
+      "uid": "65565989",
+      "name": "名字不够s呢",
+      "level": 6,
       "isCaptain": false,
       "guardLevel": 0
     },

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-07T16:04:16.753Z",
+  "generatedAt": "2026-04-07T17:48:08.218Z",
   "creators": {
     "491378910": {
       "name": "Yumee",
@@ -325,9 +325,9 @@
     "3690985523514020": {
       "name": "Kansatsu",
       "stats": {
-        "total": 40,
+        "total": 41,
         "captains": 7,
-        "fansOnly": 33
+        "fansOnly": 34
       },
       "fans": [
         {
@@ -609,12 +609,19 @@
           "level": 2,
           "isCaptain": false,
           "guardLevel": 0
+        },
+        {
+          "uid": "3493141921401157",
+          "name": "千风幻想",
+          "level": 2,
+          "isCaptain": false,
+          "guardLevel": 0
         }
       ]
     }
   },
   "totalStats": {
-    "totalFans": 83,
+    "totalFans": 84,
     "totalCaptains": 24
   }
 }

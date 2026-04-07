@@ -2,11 +2,11 @@
   "uid": "3690985523514020",
   "creatorName": "Kansatsu",
   "roomId": 1713821248,
-  "generatedAt": "2026-04-07T16:04:15.086Z",
+  "generatedAt": "2026-04-07T17:48:06.210Z",
   "stats": {
-    "total": 40,
+    "total": 41,
     "captains": 7,
-    "fansOnly": 33
+    "fansOnly": 34
   },
   "fans": [
     {
@@ -285,6 +285,13 @@
     {
       "uid": "327661918",
       "name": "HiYukio",
+      "level": 2,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "3493141921401157",
+      "name": "千风幻想",
       "level": 2,
       "isCaptain": false,
       "guardLevel": 0

@@ -2,11 +2,11 @@
   "uid": "689955798",
   "creatorName": "Dolphin",
   "roomId": 1917337166,
-  "generatedAt": "2026-04-09T16:11:41.003Z",
+  "generatedAt": "2026-04-09T17:53:00.854Z",
   "stats": {
-    "total": 35,
+    "total": 36,
     "captains": 12,
-    "fansOnly": 23
+    "fansOnly": 24
   },
   "fans": [
     {
@@ -150,6 +150,13 @@
       "guardLevel": 0
     },
     {
+      "uid": "399982350",
+      "name": "摸鱼蒙阳",
+      "level": 16,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
       "uid": "36304080",
       "name": "時崎神夜小同学",
       "level": 15,
@@ -171,8 +178,8 @@
       "guardLevel": 0
     },
     {
-      "uid": "399982350",
-      "name": "摸鱼蒙阳",
+      "uid": "432975765",
+      "name": "画画10秒入睡",
       "level": 15,
       "isCaptain": false,
       "guardLevel": 0
@@ -199,6 +206,13 @@
       "guardLevel": 0
     },
     {
+      "uid": "1169754262",
+      "name": "Zero_Observer",
+      "level": 11,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
       "uid": "470302567",
       "name": "a_secret_past",
       "level": 11,
@@ -209,13 +223,6 @@
       "uid": "7226089",
       "name": "饿-学不会散射",
       "level": 11,
-      "isCaptain": false,
-      "guardLevel": 0
-    },
-    {
-      "uid": "1169754262",
-      "name": "Zero_Observer",
-      "level": 10,
       "isCaptain": false,
       "guardLevel": 0
     },
@@ -234,15 +241,15 @@
       "guardLevel": 0
     },
     {
-      "uid": "1107870854",
-      "name": "飴美夜リシロ",
-      "level": 7,
+      "uid": "491378910",
+      "name": "绘梦正在观察人类",
+      "level": 8,
       "isCaptain": false,
       "guardLevel": 0
     },
     {
-      "uid": "491378910",
-      "name": "绘梦正在观察人类",
+      "uid": "1107870854",
+      "name": "飴美夜リシロ",
       "level": 7,
       "isCaptain": false,
       "guardLevel": 0

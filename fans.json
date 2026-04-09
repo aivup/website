@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-09T16:11:41.961Z",
+  "generatedAt": "2026-04-09T17:53:01.664Z",
   "creators": {
     "491378910": {
       "name": "Yumee",
@@ -70,9 +70,9 @@
     "689955798": {
       "name": "Dolphin",
       "stats": {
-        "total": 35,
+        "total": 36,
         "captains": 12,
-        "fansOnly": 23
+        "fansOnly": 24
       },
       "fans": [
         {
@@ -216,6 +216,13 @@
           "guardLevel": 0
         },
         {
+          "uid": "399982350",
+          "name": "摸鱼蒙阳",
+          "level": 16,
+          "isCaptain": false,
+          "guardLevel": 0
+        },
+        {
           "uid": "36304080",
           "name": "時崎神夜小同学",
           "level": 15,
@@ -237,8 +244,8 @@
           "guardLevel": 0
         },
         {
-          "uid": "399982350",
-          "name": "摸鱼蒙阳",
+          "uid": "432975765",
+          "name": "画画10秒入睡",
           "level": 15,
           "isCaptain": false,
           "guardLevel": 0
@@ -265,6 +272,13 @@
           "guardLevel": 0
         },
         {
+          "uid": "1169754262",
+          "name": "Zero_Observer",
+          "level": 11,
+          "isCaptain": false,
+          "guardLevel": 0
+        },
+        {
           "uid": "470302567",
           "name": "a_secret_past",
           "level": 11,
@@ -275,13 +289,6 @@
           "uid": "7226089",
           "name": "饿-学不会散射",
           "level": 11,
-          "isCaptain": false,
-          "guardLevel": 0
-        },
-        {
-          "uid": "1169754262",
-          "name": "Zero_Observer",
-          "level": 10,
           "isCaptain": false,
           "guardLevel": 0
         },
@@ -300,15 +307,15 @@
           "guardLevel": 0
         },
         {
-          "uid": "1107870854",
-          "name": "飴美夜リシロ",
-          "level": 7,
+          "uid": "491378910",
+          "name": "绘梦正在观察人类",
+          "level": 8,
           "isCaptain": false,
           "guardLevel": 0
         },
         {
-          "uid": "491378910",
-          "name": "绘梦正在观察人类",
+          "uid": "1107870854",
+          "name": "飴美夜リシロ",
           "level": 7,
           "isCaptain": false,
           "guardLevel": 0
@@ -621,7 +628,7 @@
     }
   },
   "totalStats": {
-    "totalFans": 84,
+    "totalFans": 85,
     "totalCaptains": 24
   }
 }

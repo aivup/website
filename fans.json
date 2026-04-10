@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-10T12:43:33.064Z",
+  "generatedAt": "2026-04-10T14:09:55.277Z",
   "creators": {
     "491378910": {
       "name": "Yumee",
@@ -332,9 +332,9 @@
     "3690985523514020": {
       "name": "Kansatsu",
       "stats": {
-        "total": 41,
+        "total": 43,
         "captains": 7,
-        "fansOnly": 34
+        "fansOnly": 36
       },
       "fans": [
         {
@@ -450,6 +450,20 @@
           "guardLevel": 0
         },
         {
+          "uid": "451338243",
+          "name": "Mslv正在观察人类",
+          "level": 13,
+          "isCaptain": false,
+          "guardLevel": 0
+        },
+        {
+          "uid": "74157631",
+          "name": "血墨霊",
+          "level": 13,
+          "isCaptain": false,
+          "guardLevel": 0
+        },
+        {
           "uid": "12586930",
           "name": "立体角w",
           "level": 12,
@@ -478,13 +492,6 @@
           "guardLevel": 0
         },
         {
-          "uid": "451338243",
-          "name": "Mslv正在观察人类",
-          "level": 12,
-          "isCaptain": false,
-          "guardLevel": 0
-        },
-        {
           "uid": "506420276",
           "name": "命微suloy",
           "level": 12,
@@ -492,8 +499,8 @@
           "guardLevel": 0
         },
         {
-          "uid": "74157631",
-          "name": "血墨霊",
+          "uid": "7831443",
+          "name": "Mou摸桐",
           "level": 12,
           "isCaptain": false,
           "guardLevel": 0
@@ -513,6 +520,13 @@
           "guardLevel": 0
         },
         {
+          "uid": "1143640639",
+          "name": "一支树人Lin阿",
+          "level": 9,
+          "isCaptain": false,
+          "guardLevel": 0
+        },
+        {
           "uid": "35467749",
           "name": "Hane-47",
           "level": 9,
@@ -527,9 +541,9 @@
           "guardLevel": 0
         },
         {
-          "uid": "1143640639",
-          "name": "一支树人Lin阿",
-          "level": 8,
+          "uid": "689955798",
+          "name": "Dolphin正在观察人类",
+          "level": 9,
           "isCaptain": false,
           "guardLevel": 0
         },
@@ -555,9 +569,9 @@
           "guardLevel": 0
         },
         {
-          "uid": "689955798",
-          "name": "Dolphin正在观察人类",
-          "level": 8,
+          "uid": "3092148",
+          "name": "不要激进",
+          "level": 6,
           "isCaptain": false,
           "guardLevel": 0
         },
@@ -628,7 +642,7 @@
     }
   },
   "totalStats": {
-    "totalFans": 85,
+    "totalFans": 87,
     "totalCaptains": 24
   }
 }

@@ -2,11 +2,11 @@
   "uid": "491378910",
   "creatorName": "Yumee",
   "roomId": 1935935504,
-  "generatedAt": "2026-04-12T16:25:57.177Z",
+  "generatedAt": "2026-04-12T17:26:17.371Z",
   "stats": {
-    "total": 8,
+    "total": 9,
     "captains": 5,
-    "fansOnly": 3
+    "fansOnly": 4
   },
   "fans": [
     {
@@ -43,6 +43,13 @@
       "level": 24,
       "isCaptain": true,
       "guardLevel": 3
+    },
+    {
+      "uid": "1377921529",
+      "name": "谢了谢一帆风顺",
+      "level": 23,
+      "isCaptain": false,
+      "guardLevel": 0
     },
     {
       "uid": "447386656",

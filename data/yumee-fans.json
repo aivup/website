@@ -2,11 +2,11 @@
   "uid": "491378910",
   "creatorName": "Yumee",
   "roomId": 1935935504,
-  "generatedAt": "2026-04-12T17:26:17.371Z",
+  "generatedAt": "2026-04-12T18:32:21.314Z",
   "stats": {
-    "total": 9,
+    "total": 10,
     "captains": 5,
-    "fansOnly": 4
+    "fansOnly": 5
   },
   "fans": [
     {
@@ -55,6 +55,13 @@
       "uid": "447386656",
       "name": "Sigazen",
       "level": 18,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "3494358884026370",
+      "name": "坎通の不知名珠人主播",
+      "level": 15,
       "isCaptain": false,
       "guardLevel": 0
     },

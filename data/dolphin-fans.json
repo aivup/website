@@ -2,7 +2,7 @@
   "uid": "689955798",
   "creatorName": "Dolphin",
   "roomId": 1917337166,
-  "generatedAt": "2026-04-15T12:57:58.443Z",
+  "generatedAt": "2026-04-15T14:28:46.991Z",
   "stats": {
     "total": 36,
     "captains": 12,
@@ -213,6 +213,13 @@
       "guardLevel": 0
     },
     {
+      "uid": "451338243",
+      "name": "Mslv正在观察人类",
+      "level": 11,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
       "uid": "470302567",
       "name": "a_secret_past",
       "level": 11,
@@ -227,22 +234,15 @@
       "guardLevel": 0
     },
     {
-      "uid": "451338243",
-      "name": "Mslv正在观察人类",
-      "level": 10,
+      "uid": "491378910",
+      "name": "半笺绘梦",
+      "level": 9,
       "isCaptain": false,
       "guardLevel": 0
     },
     {
       "uid": "269048057",
       "name": "雪音沢羽sawawa",
-      "level": 8,
-      "isCaptain": false,
-      "guardLevel": 0
-    },
-    {
-      "uid": "491378910",
-      "name": "半笺绘梦",
       "level": 8,
       "isCaptain": false,
       "guardLevel": 0

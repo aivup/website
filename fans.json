@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-18T15:28:22.535Z",
+  "generatedAt": "2026-04-18T16:26:48.215Z",
   "creators": {
     "491378910": {
       "name": "Yumee",
@@ -84,9 +84,9 @@
     "689955798": {
       "name": "Dolphin",
       "stats": {
-        "total": 36,
+        "total": 37,
         "captains": 12,
-        "fansOnly": 24
+        "fansOnly": 25
       },
       "fans": [
         {
@@ -266,7 +266,7 @@
         },
         {
           "uid": "65235906",
-          "name": "苦橙幼果正在观察人类",
+          "name": "苦橙观察人类",
           "level": 14,
           "isCaptain": false,
           "guardLevel": 0
@@ -302,6 +302,13 @@
         {
           "uid": "470302567",
           "name": "a_secret_past",
+          "level": 11,
+          "isCaptain": false,
+          "guardLevel": 0
+        },
+        {
+          "uid": "490860410",
+          "name": "小杜撒嘛",
           "level": 11,
           "isCaptain": false,
           "guardLevel": 0
@@ -656,7 +663,7 @@
     }
   },
   "totalStats": {
-    "totalFans": 89,
+    "totalFans": 90,
     "totalCaptains": 24
   }
 }

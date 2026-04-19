@@ -2,7 +2,7 @@
   "uid": "3690985523514020",
   "creatorName": "Kansatsu",
   "roomId": 1713821248,
-  "generatedAt": "2026-04-19T15:28:37.416Z",
+  "generatedAt": "2026-04-19T16:27:21.349Z",
   "stats": {
     "total": 43,
     "captains": 7,
@@ -10,16 +10,16 @@
   },
   "fans": [
     {
-      "uid": "640879",
-      "name": "摸鱼散人苏三望",
+      "uid": "149652883",
+      "name": "木子不是木子狸",
       "level": 27,
       "isCaptain": true,
       "guardLevel": 3
     },
     {
-      "uid": "149652883",
-      "name": "木子不是木子狸",
-      "level": 26,
+      "uid": "640879",
+      "name": "摸鱼散人苏三望",
+      "level": 27,
       "isCaptain": true,
       "guardLevel": 3
     },

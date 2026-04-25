@@ -2,11 +2,11 @@
   "uid": "3690985523514020",
   "creatorName": "Kansatsu",
   "roomId": 1713821248,
-  "generatedAt": "2026-04-25T13:56:55.285Z",
+  "generatedAt": "2026-04-25T14:37:56.232Z",
   "stats": {
-    "total": 43,
+    "total": 44,
     "captains": 7,
-    "fansOnly": 36
+    "fansOnly": 37
   },
   "fans": [
     {
@@ -237,6 +237,13 @@
       "uid": "494317457",
       "name": "Schwarz0079",
       "level": 8,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "11330125",
+      "name": "封渊洹-Liang",
+      "level": 7,
       "isCaptain": false,
       "guardLevel": 0
     },

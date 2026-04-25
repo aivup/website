@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-25T13:56:57.158Z",
+  "generatedAt": "2026-04-25T14:37:57.781Z",
   "creators": {
     "491378910": {
       "name": "Yumee",
@@ -353,9 +353,9 @@
     "3690985523514020": {
       "name": "Kansatsu",
       "stats": {
-        "total": 43,
+        "total": 44,
         "captains": 7,
-        "fansOnly": 36
+        "fansOnly": 37
       },
       "fans": [
         {
@@ -590,6 +590,13 @@
           "guardLevel": 0
         },
         {
+          "uid": "11330125",
+          "name": "封渊洹-Liang",
+          "level": 7,
+          "isCaptain": false,
+          "guardLevel": 0
+        },
+        {
           "uid": "3092148",
           "name": "不要激进",
           "level": 6,
@@ -663,7 +670,7 @@
     }
   },
   "totalStats": {
-    "totalFans": 90,
+    "totalFans": 91,
     "totalCaptains": 24
   }
 }

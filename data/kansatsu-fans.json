@@ -2,7 +2,7 @@
   "uid": "3690985523514020",
   "creatorName": "Kansatsu",
   "roomId": 1713821248,
-  "generatedAt": "2026-04-25T15:31:15.408Z",
+  "generatedAt": "2026-04-25T16:29:28.814Z",
   "stats": {
     "total": 44,
     "captains": 7,
@@ -178,6 +178,13 @@
       "guardLevel": 0
     },
     {
+      "uid": "1143640639",
+      "name": "一支树人Lin阿",
+      "level": 11,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
       "uid": "1888044797",
       "name": "Titanium_Dioxide",
       "level": 11,
@@ -188,13 +195,6 @@
       "uid": "34622332",
       "name": "幻想-杀手",
       "level": 11,
-      "isCaptain": false,
-      "guardLevel": 0
-    },
-    {
-      "uid": "1143640639",
-      "name": "一支树人Lin阿",
-      "level": 10,
       "isCaptain": false,
       "guardLevel": 0
     },

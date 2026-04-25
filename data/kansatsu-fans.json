@@ -2,7 +2,7 @@
   "uid": "3690985523514020",
   "creatorName": "Kansatsu",
   "roomId": 1713821248,
-  "generatedAt": "2026-04-25T14:37:56.232Z",
+  "generatedAt": "2026-04-25T15:31:15.408Z",
   "stats": {
     "total": 44,
     "captains": 7,
@@ -122,6 +122,13 @@
       "guardLevel": 0
     },
     {
+      "uid": "38822387",
+      "name": "绿叶-乘-风破浪-前行",
+      "level": 13,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
       "uid": "451338243",
       "name": "Mslv正在观察人类",
       "level": 13,
@@ -152,13 +159,6 @@
     {
       "uid": "36092718",
       "name": "琉达殊tenzin",
-      "level": 12,
-      "isCaptain": false,
-      "guardLevel": 0
-    },
-    {
-      "uid": "38822387",
-      "name": "绿叶-乘-风破浪-前行",
       "level": 12,
       "isCaptain": false,
       "guardLevel": 0
@@ -220,6 +220,13 @@
       "guardLevel": 0
     },
     {
+      "uid": "11330125",
+      "name": "封渊洹-Liang",
+      "level": 8,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
       "uid": "3546872404773702",
       "name": "祾九魌097_Official",
       "level": 8,
@@ -237,13 +244,6 @@
       "uid": "494317457",
       "name": "Schwarz0079",
       "level": 8,
-      "isCaptain": false,
-      "guardLevel": 0
-    },
-    {
-      "uid": "11330125",
-      "name": "封渊洹-Liang",
-      "level": 7,
       "isCaptain": false,
       "guardLevel": 0
     },

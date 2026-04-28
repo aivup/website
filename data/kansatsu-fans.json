@@ -2,11 +2,11 @@
   "uid": "3690985523514020",
   "creatorName": "Kansatsu",
   "roomId": 1713821248,
-  "generatedAt": "2026-04-28T10:53:10.034Z",
+  "generatedAt": "2026-04-28T12:19:24.459Z",
   "stats": {
-    "total": 44,
+    "total": 45,
     "captains": 7,
-    "fansOnly": 37
+    "fansOnly": 38
   },
   "fans": [
     {
@@ -300,6 +300,13 @@
       "uid": "3546790257232760",
       "name": "妇卿",
       "level": 3,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "1064646844",
+      "name": "清乖子",
+      "level": 2,
       "isCaptain": false,
       "guardLevel": 0
     },

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-29T15:02:00.864Z",
+  "generatedAt": "2026-04-29T17:15:45.473Z",
   "creators": {
     "491378910": {
       "name": "Yumee",
@@ -366,16 +366,16 @@
           "guardLevel": 3
         },
         {
-          "uid": "640879",
-          "name": "摸鱼散人苏三望",
+          "uid": "362359061",
+          "name": "笨蛋调试器",
           "level": 27,
           "isCaptain": true,
           "guardLevel": 3
         },
         {
-          "uid": "362359061",
-          "name": "笨蛋调试器",
-          "level": 26,
+          "uid": "640879",
+          "name": "摸鱼散人苏三望",
+          "level": 27,
           "isCaptain": true,
           "guardLevel": 3
         },

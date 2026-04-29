@@ -2,7 +2,7 @@
   "uid": "3690985523514020",
   "creatorName": "Kansatsu",
   "roomId": 1713821248,
-  "generatedAt": "2026-04-29T15:01:59.277Z",
+  "generatedAt": "2026-04-29T17:15:43.988Z",
   "stats": {
     "total": 45,
     "captains": 7,
@@ -17,16 +17,16 @@
       "guardLevel": 3
     },
     {
-      "uid": "640879",
-      "name": "摸鱼散人苏三望",
+      "uid": "362359061",
+      "name": "笨蛋调试器",
       "level": 27,
       "isCaptain": true,
       "guardLevel": 3
     },
     {
-      "uid": "362359061",
-      "name": "笨蛋调试器",
-      "level": 26,
+      "uid": "640879",
+      "name": "摸鱼散人苏三望",
+      "level": 27,
       "isCaptain": true,
       "guardLevel": 3
     },

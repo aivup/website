@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-30T12:07:49.155Z",
+  "generatedAt": "2026-04-30T14:58:08.176Z",
   "creators": {
     "491378910": {
       "name": "Yumee",
@@ -359,6 +359,13 @@
       },
       "fans": [
         {
+          "uid": "640879",
+          "name": "摸鱼散人苏三望",
+          "level": 28,
+          "isCaptain": true,
+          "guardLevel": 3
+        },
+        {
           "uid": "149652883",
           "name": "木子不是木子狸",
           "level": 27,
@@ -368,13 +375,6 @@
         {
           "uid": "362359061",
           "name": "笨蛋调试器",
-          "level": 27,
-          "isCaptain": true,
-          "guardLevel": 3
-        },
-        {
-          "uid": "640879",
-          "name": "摸鱼散人苏三望",
           "level": 27,
           "isCaptain": true,
           "guardLevel": 3
@@ -646,16 +646,16 @@
           "guardLevel": 0
         },
         {
-          "uid": "3546790257232760",
-          "name": "妇卿",
+          "uid": "1064646844",
+          "name": "清乖子",
           "level": 3,
           "isCaptain": false,
           "guardLevel": 0
         },
         {
-          "uid": "1064646844",
-          "name": "清乖子",
-          "level": 2,
+          "uid": "3546790257232760",
+          "name": "妇卿",
+          "level": 3,
           "isCaptain": false,
           "guardLevel": 0
         },

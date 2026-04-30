@@ -2,13 +2,20 @@
   "uid": "3690985523514020",
   "creatorName": "Kansatsu",
   "roomId": 1713821248,
-  "generatedAt": "2026-04-30T12:07:47.473Z",
+  "generatedAt": "2026-04-30T14:58:06.043Z",
   "stats": {
     "total": 45,
     "captains": 7,
     "fansOnly": 38
   },
   "fans": [
+    {
+      "uid": "640879",
+      "name": "摸鱼散人苏三望",
+      "level": 28,
+      "isCaptain": true,
+      "guardLevel": 3
+    },
     {
       "uid": "149652883",
       "name": "木子不是木子狸",
@@ -19,13 +26,6 @@
     {
       "uid": "362359061",
       "name": "笨蛋调试器",
-      "level": 27,
-      "isCaptain": true,
-      "guardLevel": 3
-    },
-    {
-      "uid": "640879",
-      "name": "摸鱼散人苏三望",
       "level": 27,
       "isCaptain": true,
       "guardLevel": 3
@@ -297,16 +297,16 @@
       "guardLevel": 0
     },
     {
-      "uid": "3546790257232760",
-      "name": "妇卿",
+      "uid": "1064646844",
+      "name": "清乖子",
       "level": 3,
       "isCaptain": false,
       "guardLevel": 0
     },
     {
-      "uid": "1064646844",
-      "name": "清乖子",
-      "level": 2,
+      "uid": "3546790257232760",
+      "name": "妇卿",
+      "level": 3,
       "isCaptain": false,
       "guardLevel": 0
     },

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-05T07:11:17.346Z",
+  "generatedAt": "2026-05-05T09:51:34.024Z",
   "creators": {
     "491378910": {
       "name": "Yumee",
@@ -353,9 +353,9 @@
     "3690985523514020": {
       "name": "Kansatsu",
       "stats": {
-        "total": 45,
+        "total": 50,
         "captains": 7,
-        "fansOnly": 38
+        "fansOnly": 43
       },
       "fans": [
         {
@@ -443,6 +443,13 @@
           "guardLevel": 0
         },
         {
+          "uid": "1570146264",
+          "name": "雾影提灯",
+          "level": 15,
+          "isCaptain": false,
+          "guardLevel": 0
+        },
+        {
           "uid": "3546629093198795",
           "name": "衅钟111",
           "level": 15,
@@ -452,13 +459,6 @@
         {
           "uid": "1404549522",
           "name": "本鼓",
-          "level": 14,
-          "isCaptain": false,
-          "guardLevel": 0
-        },
-        {
-          "uid": "1570146264",
-          "name": "雾影提灯",
           "level": 14,
           "isCaptain": false,
           "guardLevel": 0
@@ -480,6 +480,13 @@
         {
           "uid": "38822387",
           "name": "绿叶-乘-风破浪-前行",
+          "level": 13,
+          "isCaptain": false,
+          "guardLevel": 0
+        },
+        {
+          "uid": "391476451",
+          "name": "端离_PauseF",
           "level": 13,
           "isCaptain": false,
           "guardLevel": 0
@@ -548,6 +555,13 @@
           "guardLevel": 0
         },
         {
+          "uid": "343746529",
+          "name": "网友小Ber",
+          "level": 11,
+          "isCaptain": false,
+          "guardLevel": 0
+        },
+        {
           "uid": "34622332",
           "name": "幻想-杀手",
           "level": 11,
@@ -562,6 +576,20 @@
           "guardLevel": 0
         },
         {
+          "uid": "11330125",
+          "name": "封渊洹-Liang",
+          "level": 9,
+          "isCaptain": false,
+          "guardLevel": 0
+        },
+        {
+          "uid": "228478011",
+          "name": "飘来飘去的欧尼克斯",
+          "level": 9,
+          "isCaptain": false,
+          "guardLevel": 0
+        },
+        {
           "uid": "35467749",
           "name": "Hane-47",
           "level": 9,
@@ -572,13 +600,6 @@
           "uid": "689955798",
           "name": "Dolphin正在观察人类",
           "level": 9,
-          "isCaptain": false,
-          "guardLevel": 0
-        },
-        {
-          "uid": "11330125",
-          "name": "封渊洹-Liang",
-          "level": 8,
           "isCaptain": false,
           "guardLevel": 0
         },
@@ -600,6 +621,13 @@
           "uid": "494317457",
           "name": "Schwarz0079",
           "level": 8,
+          "isCaptain": false,
+          "guardLevel": 0
+        },
+        {
+          "uid": "10404349",
+          "name": "xujiafeng12345",
+          "level": 6,
           "isCaptain": false,
           "guardLevel": 0
         },
@@ -646,6 +674,13 @@
           "guardLevel": 0
         },
         {
+          "uid": "549128831",
+          "name": "一条被盐蒸过的鱼",
+          "level": 5,
+          "isCaptain": false,
+          "guardLevel": 0
+        },
+        {
           "uid": "1092162257",
           "name": "canyon_nico",
           "level": 4,
@@ -677,7 +712,7 @@
     }
   },
   "totalStats": {
-    "totalFans": 92,
+    "totalFans": 97,
     "totalCaptains": 24
   }
 }

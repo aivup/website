@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-08T12:04:24.876Z",
+  "generatedAt": "2026-05-08T14:30:39.179Z",
   "creators": {
     "491378910": {
       "name": "Yumee",
@@ -353,9 +353,9 @@
     "3690985523514020": {
       "name": "Kansatsu",
       "stats": {
-        "total": 50,
+        "total": 51,
         "captains": 7,
-        "fansOnly": 43
+        "fansOnly": 44
       },
       "fans": [
         {
@@ -707,12 +707,19 @@
           "level": 2,
           "isCaptain": false,
           "guardLevel": 0
+        },
+        {
+          "uid": "354389571",
+          "name": "萨米蓝音",
+          "level": 2,
+          "isCaptain": false,
+          "guardLevel": 0
         }
       ]
     }
   },
   "totalStats": {
-    "totalFans": 97,
+    "totalFans": 98,
     "totalCaptains": 24
   }
 }

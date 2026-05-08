@@ -2,11 +2,11 @@
   "uid": "3690985523514020",
   "creatorName": "Kansatsu",
   "roomId": 1713821248,
-  "generatedAt": "2026-05-08T12:04:23.486Z",
+  "generatedAt": "2026-05-08T14:30:37.595Z",
   "stats": {
-    "total": 50,
+    "total": 51,
     "captains": 7,
-    "fansOnly": 43
+    "fansOnly": 44
   },
   "fans": [
     {
@@ -355,6 +355,13 @@
     {
       "uid": "3493141921401157",
       "name": "千风幻想",
+      "level": 2,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "354389571",
+      "name": "萨米蓝音",
       "level": 2,
       "isCaptain": false,
       "guardLevel": 0

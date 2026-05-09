@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-05-09T12:51:05.950Z",
+  "generatedAt": "2026-05-09T14:12:31.210Z",
   "creators": {
     "491378910": {
       "name": "Yumee",
       "stats": {
-        "total": 17,
+        "total": 18,
         "captains": 5,
-        "fansOnly": 12
+        "fansOnly": 13
       },
       "fans": [
         {
@@ -87,6 +87,13 @@
           "guardLevel": 0
         },
         {
+          "uid": "1404537551",
+          "name": "歪眼镜小任",
+          "level": 6,
+          "isCaptain": false,
+          "guardLevel": 0
+        },
+        {
           "uid": "173412747",
           "name": "金属乐章",
           "level": 6,
@@ -101,16 +108,16 @@
           "guardLevel": 0
         },
         {
-          "uid": "3546968479500657",
-          "name": "眠眠fufu",
+          "uid": "163107936",
+          "name": "o蜂蜂o",
           "level": 5,
           "isCaptain": false,
           "guardLevel": 0
         },
         {
-          "uid": "163107936",
-          "name": "o蜂蜂o",
-          "level": 3,
+          "uid": "3546968479500657",
+          "name": "眠眠fufu",
+          "level": 5,
           "isCaptain": false,
           "guardLevel": 0
         },
@@ -768,7 +775,7 @@
     }
   },
   "totalStats": {
-    "totalFans": 105,
+    "totalFans": 106,
     "totalCaptains": 24
   }
 }

@@ -2,11 +2,11 @@
   "uid": "491378910",
   "creatorName": "Yumee",
   "roomId": 1935935504,
-  "generatedAt": "2026-05-10T05:28:32.497Z",
+  "generatedAt": "2026-05-10T07:54:23.123Z",
   "stats": {
-    "total": 21,
+    "total": 22,
     "captains": 5,
-    "fansOnly": 16
+    "fansOnly": 17
   },
   "fans": [
     {
@@ -62,6 +62,13 @@
       "uid": "447386656",
       "name": "Sigazen",
       "level": 18,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "295387400",
+      "name": "绯七Orimu_Hii",
+      "level": 16,
       "isCaptain": false,
       "guardLevel": 0
     },

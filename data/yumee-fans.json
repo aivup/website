@@ -2,11 +2,11 @@
   "uid": "491378910",
   "creatorName": "Yumee",
   "roomId": 1935935504,
-  "generatedAt": "2026-05-10T01:51:09.081Z",
+  "generatedAt": "2026-05-10T05:28:32.497Z",
   "stats": {
-    "total": 18,
+    "total": 21,
     "captains": 5,
-    "fansOnly": 13
+    "fansOnly": 16
   },
   "fans": [
     {
@@ -87,15 +87,22 @@
       "guardLevel": 0
     },
     {
-      "uid": "1404537551",
-      "name": "歪眼镜小任",
-      "level": 6,
+      "uid": "48732146",
+      "name": "傲丙初_A1bcu",
+      "level": 11,
       "isCaptain": false,
       "guardLevel": 0
     },
     {
       "uid": "173412747",
       "name": "金属乐章",
+      "level": 7,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "1404537551",
+      "name": "歪眼镜小任",
       "level": 6,
       "isCaptain": false,
       "guardLevel": 0
@@ -104,6 +111,13 @@
       "uid": "484763161",
       "name": "表面hfg",
       "level": 6,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "1169754262",
+      "name": "Zero_Observer",
+      "level": 5,
       "isCaptain": false,
       "guardLevel": 0
     },
@@ -124,6 +138,13 @@
     {
       "uid": "3632304161294458",
       "name": "栗栗提子",
+      "level": 2,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "3706963751864928",
+      "name": "絵師_花见爱チヤ_i殿",
       "level": 2,
       "isCaptain": false,
       "guardLevel": 0

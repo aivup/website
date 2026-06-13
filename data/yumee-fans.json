@@ -2,7 +2,7 @@
   "uid": "491378910",
   "creatorName": "Yumee",
   "roomId": 1935935504,
-  "generatedAt": "2026-06-13T15:24:42.994Z",
+  "generatedAt": "2026-06-13T17:08:59.363Z",
   "stats": {
     "total": 22,
     "captains": 5,
@@ -73,16 +73,16 @@
       "guardLevel": 0
     },
     {
-      "uid": "385559108",
-      "name": "寄没名字",
+      "uid": "3494358884026370",
+      "name": "坎通の不知名珠人主播",
       "level": 16,
       "isCaptain": false,
       "guardLevel": 0
     },
     {
-      "uid": "3494358884026370",
-      "name": "坎通の不知名珠人主播",
-      "level": 15,
+      "uid": "385559108",
+      "name": "寄没名字",
+      "level": 16,
       "isCaptain": false,
       "guardLevel": 0
     },

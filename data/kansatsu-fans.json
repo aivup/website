@@ -2,11 +2,11 @@
   "uid": "3690985523514020",
   "creatorName": "Kansatsu",
   "roomId": 1713821248,
-  "generatedAt": "2026-06-23T13:34:26.572Z",
+  "generatedAt": "2026-06-23T16:18:50.879Z",
   "stats": {
-    "total": 51,
+    "total": 52,
     "captains": 7,
-    "fansOnly": 44
+    "fansOnly": 45
   },
   "fans": [
     {
@@ -348,6 +348,13 @@
     {
       "uid": "3546790257232760",
       "name": "妇卿",
+      "level": 3,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "3546886323571276",
+      "name": "雪涴Snowy",
       "level": 3,
       "isCaptain": false,
       "guardLevel": 0

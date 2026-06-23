@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T13:34:28.446Z",
+  "generatedAt": "2026-06-23T16:18:52.279Z",
   "creators": {
     "491378910": {
       "name": "Yumee",
@@ -437,9 +437,9 @@
     "3690985523514020": {
       "name": "Kansatsu",
       "stats": {
-        "total": 51,
+        "total": 52,
         "captains": 7,
-        "fansOnly": 44
+        "fansOnly": 45
       },
       "fans": [
         {
@@ -786,6 +786,13 @@
           "guardLevel": 0
         },
         {
+          "uid": "3546886323571276",
+          "name": "雪涴Snowy",
+          "level": 3,
+          "isCaptain": false,
+          "guardLevel": 0
+        },
+        {
           "uid": "327661918",
           "name": "HiYukio",
           "level": 2,
@@ -803,7 +810,7 @@
     }
   },
   "totalStats": {
-    "totalFans": 110,
+    "totalFans": 111,
     "totalCaptains": 24
   }
 }

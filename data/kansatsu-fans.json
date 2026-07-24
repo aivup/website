@@ -2,7 +2,7 @@
   "uid": "3690985523514020",
   "creatorName": "Kansatsu",
   "roomId": 1713821248,
-  "generatedAt": "2026-07-24T12:10:57.277Z",
+  "generatedAt": "2026-07-24T14:42:32.490Z",
   "stats": {
     "total": 52,
     "captains": 7,
@@ -115,6 +115,13 @@
       "guardLevel": 0
     },
     {
+      "uid": "451338243",
+      "name": "Mslv正在观察人类",
+      "level": 14,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
       "uid": "630889202",
       "name": "あなたが一番好きovo",
       "level": 14,
@@ -138,13 +145,6 @@
     {
       "uid": "391476451",
       "name": "端离_PauseF",
-      "level": 13,
-      "isCaptain": false,
-      "guardLevel": 0
-    },
-    {
-      "uid": "451338243",
-      "name": "Mslv正在观察人类",
       "level": 13,
       "isCaptain": false,
       "guardLevel": 0

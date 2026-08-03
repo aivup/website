@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-03T08:58:57.678Z",
+  "generatedAt": "2026-08-03T12:21:24.558Z",
   "creators": {
     "491378910": {
       "name": "Yumee",
       "stats": {
-        "total": 23,
+        "total": 24,
         "captains": 5,
-        "fansOnly": 18
+        "fansOnly": 19
       },
       "fans": [
         {
@@ -117,6 +117,13 @@
         {
           "uid": "1404537551",
           "name": "歪眼镜小任",
+          "level": 6,
+          "isCaptain": false,
+          "guardLevel": 0
+        },
+        {
+          "uid": "3546600454490707",
+          "name": "残唸_P",
           "level": 6,
           "isCaptain": false,
           "guardLevel": 0
@@ -817,7 +824,7 @@
     }
   },
   "totalStats": {
-    "totalFans": 112,
+    "totalFans": 113,
     "totalCaptains": 24
   }
 }

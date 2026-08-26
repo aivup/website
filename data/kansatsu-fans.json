@@ -2,11 +2,11 @@
   "uid": "3690985523514020",
   "creatorName": "Kansatsu",
   "roomId": 1713821248,
-  "generatedAt": "2026-08-26T12:26:23.618Z",
+  "generatedAt": "2026-08-26T13:43:38.276Z",
   "stats": {
-    "total": 52,
+    "total": 53,
     "captains": 7,
-    "fansOnly": 45
+    "fansOnly": 46
   },
   "fans": [
     {
@@ -369,6 +369,13 @@
     {
       "uid": "3493141921401157",
       "name": "千风幻想",
+      "level": 2,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "3546719457380731",
+      "name": "重言式Tautology",
       "level": 2,
       "isCaptain": false,
       "guardLevel": 0

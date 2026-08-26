@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T12:26:25.516Z",
+  "generatedAt": "2026-08-26T13:43:39.959Z",
   "creators": {
     "491378910": {
       "name": "Yumee",
@@ -451,9 +451,9 @@
     "3690985523514020": {
       "name": "Kansatsu",
       "stats": {
-        "total": 52,
+        "total": 53,
         "captains": 7,
-        "fansOnly": 45
+        "fansOnly": 46
       },
       "fans": [
         {
@@ -819,12 +819,19 @@
           "level": 2,
           "isCaptain": false,
           "guardLevel": 0
+        },
+        {
+          "uid": "3546719457380731",
+          "name": "重言式Tautology",
+          "level": 2,
+          "isCaptain": false,
+          "guardLevel": 0
         }
       ]
     }
   },
   "totalStats": {
-    "totalFans": 113,
+    "totalFans": 114,
     "totalCaptains": 24
   }
 }

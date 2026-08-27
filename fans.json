@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-27T13:16:26.445Z",
+  "generatedAt": "2026-08-27T23:19:24.373Z",
   "creators": {
     "491378910": {
       "name": "Yumee",
@@ -793,6 +793,13 @@
           "guardLevel": 0
         },
         {
+          "uid": "3546719457380731",
+          "name": "重言式Tautology",
+          "level": 3,
+          "isCaptain": false,
+          "guardLevel": 0
+        },
+        {
           "uid": "3546790257232760",
           "name": "妇卿",
           "level": 3,
@@ -816,13 +823,6 @@
         {
           "uid": "3493141921401157",
           "name": "千风幻想",
-          "level": 2,
-          "isCaptain": false,
-          "guardLevel": 0
-        },
-        {
-          "uid": "3546719457380731",
-          "name": "重言式Tautology",
           "level": 2,
           "isCaptain": false,
           "guardLevel": 0

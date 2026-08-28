@@ -2,11 +2,11 @@
   "uid": "689955798",
   "creatorName": "Dolphin",
   "roomId": 1917337166,
-  "generatedAt": "2026-08-27T23:19:23.528Z",
+  "generatedAt": "2026-08-28T07:29:17.495Z",
   "stats": {
-    "total": 37,
+    "total": 38,
     "captains": 12,
-    "fansOnly": 25
+    "fansOnly": 26
   },
   "fans": [
     {
@@ -111,6 +111,13 @@
       "uid": "3494364485519906",
       "name": "郵驛薓鄕",
       "level": 22,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "119345616",
+      "name": "kirito单推甜甜的甜心鹿",
+      "level": 19,
       "isCaptain": false,
       "guardLevel": 0
     },

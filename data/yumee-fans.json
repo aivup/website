@@ -2,11 +2,11 @@
   "uid": "491378910",
   "creatorName": "Yumee",
   "roomId": 1935935504,
-  "generatedAt": "2026-10-07T14:51:11.935Z",
+  "generatedAt": "2026-10-07T20:16:32.182Z",
   "stats": {
-    "total": 24,
+    "total": 25,
     "captains": 5,
-    "fansOnly": 19
+    "fansOnly": 20
   },
   "fans": [
     {
@@ -89,6 +89,13 @@
     {
       "uid": "300334753",
       "name": "雪雪m-",
+      "level": 11,
+      "isCaptain": false,
+      "guardLevel": 0
+    },
+    {
+      "uid": "346089884",
+      "name": "牧野风聆",
       "level": 11,
       "isCaptain": false,
       "guardLevel": 0
